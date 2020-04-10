@@ -1,0 +1,14 @@
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\MySql.Data.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\Google.Protobuf.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\Renci.SshNet.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\MySql.Data.xml
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\Common.dll
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\DataAccess\bin\Debug\Common.pdb

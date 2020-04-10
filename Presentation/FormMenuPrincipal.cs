@@ -16,6 +16,11 @@ namespace Presentation
 
     public partial class FormMenuPrincipal : Form
     {
+        public FormMenuPrincipal()
+        {
+            InitializeComponent();
+        }
+
         //FUNCIÓN PARA ABRIR FORMULARIOS
         public void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
@@ -43,7 +48,9 @@ namespace Presentation
         private void LoadUserData()
         {
             LblNombre.Text = UserLoginCache.Nombre + " " + UserLoginCache.Apellido;
-            LblCargo.Text = UserLoginCache.Cargo; 
+            LblCargo.Text = UserLoginCache.Cargo;
+            PrivilegiosUsuario();
+
         }
 
         private void CleanMenu()
@@ -57,9 +64,25 @@ namespace Presentation
             iBtnLlamadas.BackColor = Color.Empty;
         }
 
-        public FormMenuPrincipal()
+        //Administrar privilegios
+        private void PrivilegiosUsuario()
         {
-            InitializeComponent();
+            if (UserLoginCache.Cargo == Cargos.Administrador)
+            {
+                //Código - Configurar estadísticas principales
+            }
+            if (UserLoginCache.Cargo == Cargos.Gerente)
+            {
+                //Código - Configurar estadísticas principales
+            }
+            if (UserLoginCache.Cargo == Cargos.JefeDepartamento)
+            {
+                //Código - Configurar estadísticas principales
+            }
+            if (UserLoginCache.Cargo == Cargos.Tecnico)
+            {
+                iBtnProveedor.Visible = false;
+            }
         }
 
 

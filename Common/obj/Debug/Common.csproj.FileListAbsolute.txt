@@ -3,3 +3,8 @@ C:\Users\vdiez\source\repos\LoginLayeredCSharp\Common\bin\Debug\Common.pdb
 C:\Users\vdiez\source\repos\LoginLayeredCSharp\Common\obj\Debug\Common.csprojAssemblyReference.cache
 C:\Users\vdiez\source\repos\LoginLayeredCSharp\Common\obj\Debug\Common.dll
 C:\Users\vdiez\source\repos\LoginLayeredCSharp\Common\obj\Debug\Common.pdb
+C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Common\bin\Debug\Common.dll
+C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Common\bin\Debug\Common.pdb
+C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Common\obj\Debug\Common.dll
+C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Common\obj\Debug\Common.pdb

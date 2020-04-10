@@ -30,10 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuario));
             this.FlpUsuario = new System.Windows.Forms.FlowLayoutPanel();
+            this.iPbxUsuario = new FontAwesome.Sharp.IconPictureBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.iBtnNombreApellido = new FontAwesome.Sharp.IconPictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.iBtnCargo = new FontAwesome.Sharp.IconPictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.iBtnEmail = new FontAwesome.Sharp.IconPictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.LblNombreApellido = new System.Windows.Forms.Label();
@@ -42,18 +46,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.LblEmail = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iPbxUsuario = new FontAwesome.Sharp.IconPictureBox();
-            this.iBtnNombreApellido = new FontAwesome.Sharp.IconPictureBox();
-            this.iBtnCargo = new FontAwesome.Sharp.IconPictureBox();
-            this.iBtnEmail = new FontAwesome.Sharp.IconPictureBox();
             this.FlpUsuario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iPbxUsuario)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iPbxUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnNombreApellido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnCargo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnEmail)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // FlpUsuario
@@ -67,6 +67,21 @@
             this.FlpUsuario.Name = "FlpUsuario";
             this.FlpUsuario.Size = new System.Drawing.Size(606, 283);
             this.FlpUsuario.TabIndex = 0;
+            // 
+            // iPbxUsuario
+            // 
+            this.iPbxUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.iPbxUsuario.Enabled = false;
+            this.iPbxUsuario.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iPbxUsuario.IconColor = System.Drawing.Color.White;
+            this.iPbxUsuario.IconSize = 142;
+            this.iPbxUsuario.Location = new System.Drawing.Point(3, 10);
+            this.iPbxUsuario.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.iPbxUsuario.Name = "iPbxUsuario";
+            this.iPbxUsuario.Size = new System.Drawing.Size(603, 142);
+            this.iPbxUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iPbxUsuario.TabIndex = 0;
+            this.iPbxUsuario.TabStop = false;
             // 
             // flowLayoutPanel2
             // 
@@ -94,6 +109,19 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(35, 114);
             this.flowLayoutPanel3.TabIndex = 1;
             // 
+            // iBtnNombreApellido
+            // 
+            this.iBtnNombreApellido.BackColor = System.Drawing.Color.Transparent;
+            this.iBtnNombreApellido.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iBtnNombreApellido.IconColor = System.Drawing.Color.White;
+            this.iBtnNombreApellido.IconSize = 27;
+            this.iBtnNombreApellido.Location = new System.Drawing.Point(5, 3);
+            this.iBtnNombreApellido.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.iBtnNombreApellido.Name = "iBtnNombreApellido";
+            this.iBtnNombreApellido.Size = new System.Drawing.Size(30, 27);
+            this.iBtnNombreApellido.TabIndex = 0;
+            this.iBtnNombreApellido.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -104,6 +132,19 @@
             this.panel4.Size = new System.Drawing.Size(30, 1);
             this.panel4.TabIndex = 8;
             // 
+            // iBtnCargo
+            // 
+            this.iBtnCargo.BackColor = System.Drawing.Color.Transparent;
+            this.iBtnCargo.IconChar = FontAwesome.Sharp.IconChar.Sitemap;
+            this.iBtnCargo.IconColor = System.Drawing.Color.White;
+            this.iBtnCargo.IconSize = 27;
+            this.iBtnCargo.Location = new System.Drawing.Point(5, 37);
+            this.iBtnCargo.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.iBtnCargo.Name = "iBtnCargo";
+            this.iBtnCargo.Size = new System.Drawing.Size(30, 27);
+            this.iBtnCargo.TabIndex = 9;
+            this.iBtnCargo.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -113,6 +154,19 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(30, 1);
             this.panel5.TabIndex = 10;
+            // 
+            // iBtnEmail
+            // 
+            this.iBtnEmail.BackColor = System.Drawing.Color.Transparent;
+            this.iBtnEmail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.iBtnEmail.IconColor = System.Drawing.Color.White;
+            this.iBtnEmail.IconSize = 27;
+            this.iBtnEmail.Location = new System.Drawing.Point(5, 71);
+            this.iBtnEmail.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.iBtnEmail.Name = "iBtnEmail";
+            this.iBtnEmail.Size = new System.Drawing.Size(30, 27);
+            this.iBtnEmail.TabIndex = 11;
+            this.iBtnEmail.TabStop = false;
             // 
             // panel6
             // 
@@ -207,60 +261,6 @@
             this.panel3.Size = new System.Drawing.Size(270, 1);
             this.panel3.TabIndex = 8;
             // 
-            // iPbxUsuario
-            // 
-            this.iPbxUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.iPbxUsuario.Enabled = false;
-            this.iPbxUsuario.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iPbxUsuario.IconColor = System.Drawing.Color.White;
-            this.iPbxUsuario.IconSize = 142;
-            this.iPbxUsuario.Location = new System.Drawing.Point(3, 10);
-            this.iPbxUsuario.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.iPbxUsuario.Name = "iPbxUsuario";
-            this.iPbxUsuario.Size = new System.Drawing.Size(603, 142);
-            this.iPbxUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.iPbxUsuario.TabIndex = 0;
-            this.iPbxUsuario.TabStop = false;
-            // 
-            // iBtnNombreApellido
-            // 
-            this.iBtnNombreApellido.BackColor = System.Drawing.Color.Transparent;
-            this.iBtnNombreApellido.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iBtnNombreApellido.IconColor = System.Drawing.Color.White;
-            this.iBtnNombreApellido.IconSize = 27;
-            this.iBtnNombreApellido.Location = new System.Drawing.Point(5, 3);
-            this.iBtnNombreApellido.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.iBtnNombreApellido.Name = "iBtnNombreApellido";
-            this.iBtnNombreApellido.Size = new System.Drawing.Size(30, 27);
-            this.iBtnNombreApellido.TabIndex = 0;
-            this.iBtnNombreApellido.TabStop = false;
-            // 
-            // iBtnCargo
-            // 
-            this.iBtnCargo.BackColor = System.Drawing.Color.Transparent;
-            this.iBtnCargo.IconChar = FontAwesome.Sharp.IconChar.Sitemap;
-            this.iBtnCargo.IconColor = System.Drawing.Color.White;
-            this.iBtnCargo.IconSize = 27;
-            this.iBtnCargo.Location = new System.Drawing.Point(5, 37);
-            this.iBtnCargo.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.iBtnCargo.Name = "iBtnCargo";
-            this.iBtnCargo.Size = new System.Drawing.Size(30, 27);
-            this.iBtnCargo.TabIndex = 9;
-            this.iBtnCargo.TabStop = false;
-            // 
-            // iBtnEmail
-            // 
-            this.iBtnEmail.BackColor = System.Drawing.Color.Transparent;
-            this.iBtnEmail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.iBtnEmail.IconColor = System.Drawing.Color.White;
-            this.iBtnEmail.IconSize = 27;
-            this.iBtnEmail.Location = new System.Drawing.Point(5, 71);
-            this.iBtnEmail.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.iBtnEmail.Name = "iBtnEmail";
-            this.iBtnEmail.Size = new System.Drawing.Size(30, 27);
-            this.iBtnEmail.TabIndex = 11;
-            this.iBtnEmail.TabStop = false;
-            // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,13 +275,13 @@
             this.Text = "FormEquipo";
             this.Load += new System.EventHandler(this.FormUsuario_Load);
             this.FlpUsuario.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iPbxUsuario)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iPbxUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnNombreApellido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnCargo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnEmail)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

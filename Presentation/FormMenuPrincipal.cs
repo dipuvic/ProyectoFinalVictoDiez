@@ -107,6 +107,7 @@ namespace Presentation
         private void iBtnUser_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FormUsuario>();
+            CleanMenu();
         }
 
         private void iBtnLogout_Click_1(object sender, EventArgs e)

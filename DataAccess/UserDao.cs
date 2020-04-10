@@ -20,7 +20,7 @@ namespace DataAccess
                 using (var command = new MySqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select *from usuarios where (login=@user and contraseña=@pass) or (Email=@user and contraseña=@pass)";
+                    command.CommandText = "select *from usuario where (login=@user and contraseña=@pass) or (email=@user and contraseña=@pass)";
                     command.Parameters.AddWithValue("@user", user);
                     command.Parameters.AddWithValue("@pass", pass);
                     command.CommandType = CommandType.Text;

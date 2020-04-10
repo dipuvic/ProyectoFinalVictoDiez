@@ -121,4 +121,19 @@
   <data name="ELECTRO DH-blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ELECTRO DH-blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="31799" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\31799.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="17493" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\17493.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3259192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3259192.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3314915" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3314915.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

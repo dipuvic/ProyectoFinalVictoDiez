@@ -23,4 +23,4 @@ C:\Users\vdiez\source\repos\LoginLayeredCSharp\Presentation\obj\Debug\Presentati
 C:\Users\vdiez\source\repos\LoginLayeredCSharp\Presentation\obj\Debug\Presentation.FormPanelPrincipal.resources
 C:\Users\vdiez\source\repos\LoginLayeredCSharp\Presentation\bin\Debug\Common.dll
 C:\Users\vdiez\source\repos\LoginLayeredCSharp\Presentation\bin\Debug\Common.pdb
-C:\Users\vdiez\source\repos\LoginLayeredCSharp\Presentation\obj\Debug\Presentation.FormEquipo.resources
+C:\Users\vdiez\source\repos\LoginLayeredCSharp\Presentation\obj\Debug\Presentation.FormUsuario.resources

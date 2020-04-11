@@ -46,6 +46,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.LblEmail = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.iBtnLogout = new FontAwesome.Sharp.IconButton();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.FlpUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iPbxUsuario)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
@@ -65,7 +67,7 @@
             this.FlpUsuario.Controls.Add(this.flowLayoutPanel1);
             this.FlpUsuario.Location = new System.Drawing.Point(82, 67);
             this.FlpUsuario.Name = "FlpUsuario";
-            this.FlpUsuario.Size = new System.Drawing.Size(606, 283);
+            this.FlpUsuario.Size = new System.Drawing.Size(606, 336);
             this.FlpUsuario.TabIndex = 0;
             // 
             // iPbxUsuario
@@ -91,7 +93,7 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 158);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(210, 117);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(210, 148);
             this.flowLayoutPanel2.TabIndex = 9;
             // 
             // flowLayoutPanel3
@@ -186,10 +188,12 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.LblEmail);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Controls.Add(this.iBtnLogout);
+            this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(213, 158);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(285, 117);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(285, 178);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // LblNombreApellido
@@ -261,6 +265,39 @@
             this.panel3.Size = new System.Drawing.Size(270, 1);
             this.panel3.TabIndex = 8;
             // 
+            // iBtnLogout
+            // 
+            this.iBtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iBtnLogout.FlatAppearance.BorderSize = 0;
+            this.iBtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
+            this.iBtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iBtnLogout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iBtnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iBtnLogout.ForeColor = System.Drawing.Color.White;
+            this.iBtnLogout.IconChar = FontAwesome.Sharp.IconChar.ShareSquare;
+            this.iBtnLogout.IconColor = System.Drawing.Color.White;
+            this.iBtnLogout.IconSize = 25;
+            this.iBtnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iBtnLogout.Location = new System.Drawing.Point(0, 117);
+            this.iBtnLogout.Margin = new System.Windows.Forms.Padding(0, 15, 3, 3);
+            this.iBtnLogout.Name = "iBtnLogout";
+            this.iBtnLogout.Rotation = 0D;
+            this.iBtnLogout.Size = new System.Drawing.Size(184, 25);
+            this.iBtnLogout.TabIndex = 8;
+            this.iBtnLogout.Text = "    Cerrar sesión";
+            this.iBtnLogout.UseVisualStyleBackColor = true;
+            this.iBtnLogout.Click += new System.EventHandler(this.iBtnLogout_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel7.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel7.Location = new System.Drawing.Point(0, 145);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0, 0, 3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(184, 1);
+            this.panel7.TabIndex = 9;
+            // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,5 +342,7 @@
         private FontAwesome.Sharp.IconPictureBox iBtnEmail;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private FontAwesome.Sharp.IconButton iBtnLogout;
+        private System.Windows.Forms.Panel panel7;
     }
 }

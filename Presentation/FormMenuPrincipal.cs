@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Common.Cache;
+using Presentation.BtnClientes;
 
 namespace Presentation
 {
@@ -45,12 +46,12 @@ namespace Presentation
             }
         }
 
+        //Cargar datos de usuario de la capa COMMON.UserLoginCache()
         private void LoadUserData()
         {
             LblNombre.Text = UserLoginCache.Nombre + " " + UserLoginCache.Apellido;
             LblCargo.Text = UserLoginCache.Cargo;
             PrivilegiosUsuario();
-
         }
 
         private void CleanMenu()
@@ -148,7 +149,7 @@ namespace Presentation
         }
         private void iBtnClientes_Click(object sender, EventArgs e)
         {
-            //  AbrirFormulario<FormClientes>();
+            AbrirFormulario<FormClientes>();
             CleanMenu();
             iBtnClientes.BackColor = Color.DimGray;
         }

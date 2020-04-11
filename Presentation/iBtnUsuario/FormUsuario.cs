@@ -25,5 +25,13 @@ namespace Presentation
             LblEmail.Text = UserLoginCache.Email;
         }
 
+        private void iBtnLogout_Click(object sender, EventArgs e)
+        {
+            //Mejorar cerrado de sesion de usuario
+            if (MessageBox.Show("Está seguro que desea cerrar sesión?", "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+                
+        }
     }
 }

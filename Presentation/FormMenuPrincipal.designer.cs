@@ -344,7 +344,7 @@
             this.LblCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LblCargo.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCargo.ForeColor = System.Drawing.Color.White;
-            this.LblCargo.Location = new System.Drawing.Point(37, 139);
+            this.LblCargo.Location = new System.Drawing.Point(37, 137);
             this.LblCargo.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.LblCargo.Name = "LblCargo";
             this.LblCargo.Size = new System.Drawing.Size(50, 14);
@@ -359,7 +359,7 @@
             this.LblNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LblNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNombre.ForeColor = System.Drawing.Color.White;
-            this.LblNombre.Location = new System.Drawing.Point(37, 120);
+            this.LblNombre.Location = new System.Drawing.Point(37, 118);
             this.LblNombre.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.LblNombre.Name = "LblNombre";
             this.LblNombre.Size = new System.Drawing.Size(48, 14);
@@ -371,6 +371,7 @@
             this.iBtnUser.BackColor = System.Drawing.Color.Transparent;
             this.iBtnUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iBtnUser.FlatAppearance.BorderSize = 0;
+            this.iBtnUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.iBtnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iBtnUser.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.iBtnUser.IconChar = FontAwesome.Sharp.IconChar.User;

@@ -49,10 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormEquipo.cs">
+    <Compile Include="BtnClientes\FormClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEquipo.Designer.cs">
+    <Compile Include="BtnClientes\FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BtnEquipo\FormEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BtnEquipo\FormEquipo.Designer.cs">
       <DependentUpon>FormEquipo.cs</DependentUpon>
     </Compile>
     <Compile Include="iBtnUsuario\FormUsuario.cs">
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BtnClientes\FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnEquipo\FormEquipo.resx">
+      <DependentUpon>FormEquipo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="iBtnUsuario\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,8 +142,6 @@
   <ItemGroup>
     <Folder Include="BtnAlmacen\" />
     <Folder Include="BtnCalidad\" />
-    <Folder Include="BtnClientes\" />
-    <Folder Include="BtnEquipo\" />
     <Folder Include="BtnLlamadas\" />
     <Folder Include="BtnProductos\" />
     <Folder Include="BtnProveedor\" />

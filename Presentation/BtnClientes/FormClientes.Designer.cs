@@ -36,8 +36,8 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.LblNombre = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.TxtNIF = new System.Windows.Forms.TextBox();
             this.LblNIF = new System.Windows.Forms.Label();
+            this.TxtNIF = new System.Windows.Forms.TextBox();
             this.LblCalle = new System.Windows.Forms.Label();
             this.TxtCalle = new System.Windows.Forms.TextBox();
             this.LblMunicipio = new System.Windows.Forms.Label();
@@ -50,9 +50,13 @@
             this.TxtTelf = new System.Windows.Forms.TextBox();
             this.LblEmail = new System.Windows.Forms.Label();
             this.TxtEmail = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnIngresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // DgvClientes
@@ -63,6 +67,7 @@
             this.DgvClientes.BackgroundColor = System.Drawing.Color.Navy;
             this.DgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvClientes.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.DgvClientes.Location = new System.Drawing.Point(12, 310);
             this.DgvClientes.Name = "DgvClientes";
             this.DgvClientes.Size = new System.Drawing.Size(754, 280);
@@ -96,6 +101,7 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
+            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 48);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(690, 217);
@@ -122,7 +128,7 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(335, 217);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(335, 204);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // LblNombre
@@ -144,21 +150,11 @@
             this.TxtNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombre.Location = new System.Drawing.Point(83, 5);
+            this.TxtNombre.Location = new System.Drawing.Point(83, 2);
             this.TxtNombre.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(230, 21);
             this.TxtNombre.TabIndex = 1;
-            // 
-            // TxtNIF
-            // 
-            this.TxtNIF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtNIF.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtNIF.Location = new System.Drawing.Point(83, 30);
-            this.TxtNIF.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
-            this.TxtNIF.Name = "TxtNIF";
-            this.TxtNIF.Size = new System.Drawing.Size(230, 20);
-            this.TxtNIF.TabIndex = 3;
             // 
             // LblNIF
             // 
@@ -172,6 +168,16 @@
             this.LblNIF.TabIndex = 4;
             this.LblNIF.Text = "NIF:";
             this.LblNIF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TxtNIF
+            // 
+            this.TxtNIF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtNIF.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.TxtNIF.Location = new System.Drawing.Point(83, 30);
+            this.TxtNIF.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtNIF.Name = "TxtNIF";
+            this.TxtNIF.Size = new System.Drawing.Size(230, 20);
+            this.TxtNIF.TabIndex = 3;
             // 
             // LblCalle
             // 
@@ -311,6 +317,38 @@
             this.TxtEmail.Size = new System.Drawing.Size(230, 20);
             this.TxtEmail.TabIndex = 15;
             // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.panel1);
+            this.flowLayoutPanel3.Controls.Add(this.BtnIngresar);
+            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(338, 3);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(296, 201);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(293, 56);
+            this.panel1.TabIndex = 3;
+            // 
+            // BtnIngresar
+            // 
+            this.BtnIngresar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnIngresar.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnIngresar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIngresar.ForeColor = System.Drawing.Color.White;
+            this.BtnIngresar.Location = new System.Drawing.Point(97, 65);
+            this.BtnIngresar.Name = "BtnIngresar";
+            this.BtnIngresar.Size = new System.Drawing.Size(105, 32);
+            this.BtnIngresar.TabIndex = 1;
+            this.BtnIngresar.Text = "Ingresar";
+            this.BtnIngresar.UseVisualStyleBackColor = false;
+            this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
+            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,6 +367,7 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,5 +396,8 @@
         private System.Windows.Forms.TextBox TxtTelf;
         private System.Windows.Forms.Label LblEmail;
         private System.Windows.Forms.TextBox TxtEmail;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button BtnIngresar;
     }
 }

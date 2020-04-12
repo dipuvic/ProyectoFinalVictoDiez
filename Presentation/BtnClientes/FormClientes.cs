@@ -31,5 +31,21 @@ namespace Presentation.BtnClientes
         {
             DgvClientes.DataSource = objetoD.MostrarClietes();
         }
+
+        private void BtnIngresar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                objetoD.InsertarCliente(TxtNombre.Text, TxtNIF.Text, TxtCalle.Text, TxtMunicipio.Text, TxtProvincia.Text, TxtCodPostal.Text, TxtTelf.Text, TxtEmail.Text);
+                MessageBox.Show("Se ha guardado el Cliente");
+                //Volvemos a cargar los clientes
+                //MostrarClientes();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No se ha podido guardar los datos por el siguiente motivo: " + ex);
+            }
+
+        }
     }
 }

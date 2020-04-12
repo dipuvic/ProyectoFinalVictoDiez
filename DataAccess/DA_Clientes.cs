@@ -19,7 +19,7 @@ namespace DataAccess
 
         public DataTable MostrarClientes(){
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM cliente";
+            comando.CommandText = "SELECT nombre,nif,calle,municipio,provincia,codpostal,telf,email FROM cliente;";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.CerrarConexion();
@@ -29,7 +29,8 @@ namespace DataAccess
         public void InsertarClientes(string nombre, string nif, string calle, string municipio, string provincia, string codpostal, int telf, string email)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "INSERT INTO Clientes VALUES('" + nombre + "','" + nif + "','" + calle + "','" + municipio + "','" + provincia + "','" + codpostal + "','" + telf + "','" + email + "')";
+            comando.CommandText = "INSERT INTO cliente VALUES('" + nombre + "','" + nif + "','" + calle + "','" + municipio + "','" + provincia + "','" + codpostal + "'," + telf + ",'" + email + "')";
+            comando.CommandType = CommandType.Text;
             comando.ExecuteNonQuery();
         }
         

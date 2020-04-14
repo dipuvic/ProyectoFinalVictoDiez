@@ -29,9 +29,10 @@ namespace DataAccess
         public void InsertarClientes(string nombre, string nif, string calle, string municipio, string provincia, string codpostal, int telf, string email)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "INSERT INTO cliente VALUES('" + nombre + "','" + nif + "','" + calle + "','" + municipio + "','" + provincia + "','" + codpostal + "'," + telf + ",'" + email + "')";
+            comando.CommandText = "INSERT INTO cliente (nombre,nif,calle,municipio,provincia,codpostal,telf,email) VALUES('" + nombre + "','" + nif + "','" + calle + "','"+municipio+"','"+provincia+"','"+codpostal+"',"+telf+",'"+email+"')";
             comando.CommandType = CommandType.Text;
             comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
         }
         
 

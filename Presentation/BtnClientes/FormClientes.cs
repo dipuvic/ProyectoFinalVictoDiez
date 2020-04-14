@@ -29,6 +29,7 @@ namespace Presentation.BtnClientes
 
         private void MostrarClientes()
         {
+            D_Clientes objetoD = new D_Clientes();
             DgvClientes.DataSource = objetoD.MostrarClietes();
         }
 
@@ -36,7 +37,7 @@ namespace Presentation.BtnClientes
         {
             try
             {
-                objetoD.InsertarCliente(TxtNombre.Text, TxtNIF.Text, TxtCalle.Text, TxtMunicipio.Text, TxtProvincia.Text, TxtCodPostal.Text, TxtTelf.Text, TxtEmail.Text);
+                objetoD.InsertarCliente(TxtNombre.Text, TxtNIF.Text, TxtCalle.Text, CbxMunicipio.Text, CbxProvincia.Text, TxtCodPostal.Text, TxtTelf.Text, TxtEmail.Text);
                 MessageBox.Show("Se ha guardado el Cliente");
                 //Volvemos a cargar los clientes
                 //MostrarClientes();
@@ -45,7 +46,7 @@ namespace Presentation.BtnClientes
             {
                 MessageBox.Show("No se ha podido guardar los datos por el siguiente motivo: " + ex);
             }
-
+            MostrarClientes();
         }
     }
 }

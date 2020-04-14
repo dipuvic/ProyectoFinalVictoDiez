@@ -23,8 +23,7 @@ namespace Domain
 
         public void InsertarCliente(string nombre, string nif, string calle, string municipio, string provincia, string codpostal, string telf, string email)
         {
-            DA_Clientes objetoDAaaa = new DA_Clientes();
-            objetoDAaaa.InsertarClientes(nombre, nif, calle, municipio, provincia, codpostal, Convert.ToInt32(telf),email);
+            objetoDA.InsertarClientes(nombre, nif, calle, municipio, provincia, codpostal, Convert.ToInt32(telf),email);
         }
         
 

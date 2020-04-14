@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ConnectionToMySql.cs" />
     <Compile Include="DA_Clientes.cs" />
+    <Compile Include="DA_Productos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDao.cs" />
   </ItemGroup>

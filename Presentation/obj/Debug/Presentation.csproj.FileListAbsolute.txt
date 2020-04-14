@@ -52,3 +52,4 @@ C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Pr
 C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.pdb
 C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.BtnClientes.FormClientes.resources
 C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.FormEquipo.resources
+C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.Producto.resources

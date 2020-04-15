@@ -163,7 +163,7 @@ namespace Presentation
 
         private void iBtnProductos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Producto>();
+            AbrirFormulario<FormProducto>();
             CleanMenu();
             iBtnProductos.BackColor = Color.DimGray;
         }

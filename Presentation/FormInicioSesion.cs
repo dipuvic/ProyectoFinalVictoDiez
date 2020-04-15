@@ -83,25 +83,10 @@ namespace Presentation
             {
                 TxtPassword.Text = "";
                 TxtPassword.ForeColor = Color.LightGray;
-                TxtPassword.UseSystemPasswordChar = false;
+                TxtPassword.UseSystemPasswordChar = true;
             }
         }
 
-        private void TxtUsuario_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if(e.KeyChar == Convert.ToChar(Keys.Enter) || e.KeyChar == Convert.ToChar(Keys.Tab))
-            {
-                TxtPassword.Focus();
-            }
-        }
-
-        private void TxtPassword_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter) || e.KeyChar == Convert.ToChar(Keys.Tab))
-            {
-                BtnAcceso.Focus();
-            }
-        }
 
         private void BtnAcceso_Click(object sender, EventArgs e)
         {

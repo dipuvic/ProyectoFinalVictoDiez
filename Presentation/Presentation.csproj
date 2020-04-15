@@ -85,11 +85,11 @@
     <Compile Include="FormPanelPrincipal.Designer.cs">
       <DependentUpon>FormPanelPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Producto.cs">
+    <Compile Include="BtnProductos\FormProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Producto.Designer.cs">
-      <DependentUpon>Producto.cs</DependentUpon>
+    <Compile Include="BtnProductos\FormProducto.Designer.cs">
+      <DependentUpon>FormProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,8 +111,8 @@
     <EmbeddedResource Include="FormPanelPrincipal.resx">
       <DependentUpon>FormPanelPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Producto.resx">
-      <DependentUpon>Producto.cs</DependentUpon>
+    <EmbeddedResource Include="BtnProductos\FormProducto.resx">
+      <DependentUpon>FormProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,7 +152,6 @@
     <Folder Include="BtnAlmacen\" />
     <Folder Include="BtnCalidad\" />
     <Folder Include="BtnLlamadas\" />
-    <Folder Include="BtnProductos\" />
     <Folder Include="BtnProveedor\" />
   </ItemGroup>
   <ItemGroup>

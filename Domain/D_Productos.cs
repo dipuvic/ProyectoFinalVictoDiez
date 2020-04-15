@@ -12,13 +12,19 @@ namespace Domain
     public class D_Productos
     {
         private DA_Productos objetoDA = new DA_Productos();
+
+        public DataTable MostrarProductos()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoDA.MostrarProductos();
+
+            return tabla;
+        }
         public void InsertarProducto(string descripcion, string precio)
         {
             DA_Productos objetoDA = new DA_Productos();
             objetoDA.InsertarProducto(descripcion, Convert.ToDouble(precio));
         }
-
-        
 
     }
 }

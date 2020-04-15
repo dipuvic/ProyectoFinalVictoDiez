@@ -89,11 +89,9 @@
             this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(279, 20);
-            this.TxtPassword.TabIndex = 1;
-            this.TxtPassword.TabStop = false;
+            this.TxtPassword.TabIndex = 2;
             this.TxtPassword.Text = "Contraseña";
             this.TxtPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TxtPassword_MouseClick);
-            this.TxtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPassword_KeyPress);
             this.TxtPassword.Leave += new System.EventHandler(this.TxtPassword_Leave);
             // 
             // iBtnPassword
@@ -119,7 +117,7 @@
             this.BtnAcceso.Location = new System.Drawing.Point(138, 326);
             this.BtnAcceso.Name = "BtnAcceso";
             this.BtnAcceso.Size = new System.Drawing.Size(130, 32);
-            this.BtnAcceso.TabIndex = 3;
+            this.BtnAcceso.TabIndex = 15;
             this.BtnAcceso.Text = "A C C E D E R";
             this.BtnAcceso.UseVisualStyleBackColor = false;
             this.BtnAcceso.Click += new System.EventHandler(this.BtnAcceso_Click);
@@ -209,11 +207,9 @@
             this.TxtUsuario.Multiline = true;
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(279, 20);
-            this.TxtUsuario.TabIndex = 0;
-            this.TxtUsuario.TabStop = false;
+            this.TxtUsuario.TabIndex = 1;
             this.TxtUsuario.Text = "Usuario";
             this.TxtUsuario.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TxtUsuario_MouseClick);
-            this.TxtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUsuario_KeyPress);
             this.TxtUsuario.Leave += new System.EventHandler(this.TxtUsuario_Leave);
             // 
             // FormInicioSesion

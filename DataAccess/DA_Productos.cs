@@ -28,7 +28,7 @@ namespace DataAccess
             return tabla;
         }
 
-        public void InsertarProducto(string descripcion, double precio)
+        public void InsertarProducto(string descripcion, string precio)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "INSERT INTO producto (descripcion,precio) VALUE ('"+descripcion+"', "+precio+");";
@@ -37,7 +37,31 @@ namespace DataAccess
             conexion.CerrarConexion();
         }
 
+        public void EditarProducto(int referencia, string descripcion, string precio)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "UPDATE producto SET descripcion='"+descripcion+"', precio='"+precio+"' WHERE referencia="+referencia+";";
+            comando.CommandType = CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+        }
 
+        public void EliminarProducto(int referencia)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "DELETE FROM producto WHERE referencia=" + referencia + ";";
+            comando.CommandType = CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+        }
+        public void BuscarProducto(int referencia, string descripcion)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT * FROM producto WHERE referencia='%"+referencia+ "%' OR '%'" + referencia + "'%';";
+            comando.CommandType = CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+        }
 
 
     }

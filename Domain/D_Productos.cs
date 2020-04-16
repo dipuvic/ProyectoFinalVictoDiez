@@ -22,9 +22,21 @@ namespace Domain
         }
         public void InsertarProducto(string descripcion, string precio)
         {
-            DA_Productos objetoDA = new DA_Productos();
-            objetoDA.InsertarProducto(descripcion, Convert.ToDouble(precio));
+            //DA_Productos objetoDA = new DA_Productos();
+            objetoDA.InsertarProducto(descripcion, precio);
         }
-
+        public void EditarProducto(string referencia, string descripcion, string precio)
+        {
+            
+            objetoDA.EditarProducto(Convert.ToInt32(referencia), descripcion, precio);
+        }
+        public void EliminarProducto(string referencia)
+        {
+            objetoDA.EliminarProducto(Convert.ToInt32(referencia));
+        }
+        public void BuscarProducto(string referencia, string descripcion)
+        {
+            objetoDA.BuscarProducto(Convert.ToInt32(referencia), descripcion);
+        }
     }
 }

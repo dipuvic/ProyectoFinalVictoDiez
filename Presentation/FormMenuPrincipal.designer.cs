@@ -89,7 +89,7 @@
             this.iBtnEquipo.Name = "iBtnEquipo";
             this.iBtnEquipo.Rotation = 0D;
             this.iBtnEquipo.Size = new System.Drawing.Size(160, 35);
-            this.iBtnEquipo.TabIndex = 1;
+            this.iBtnEquipo.TabIndex = 3;
             this.iBtnEquipo.Text = "    Equipo";
             this.iBtnEquipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnEquipo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -117,7 +117,7 @@
             this.iBtnClientes.Name = "iBtnClientes";
             this.iBtnClientes.Rotation = 0D;
             this.iBtnClientes.Size = new System.Drawing.Size(160, 35);
-            this.iBtnClientes.TabIndex = 0;
+            this.iBtnClientes.TabIndex = 4;
             this.iBtnClientes.Text = "    Clientes";
             this.iBtnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -145,7 +145,7 @@
             this.iBtnProveedor.Name = "iBtnProveedor";
             this.iBtnProveedor.Rotation = 0D;
             this.iBtnProveedor.Size = new System.Drawing.Size(160, 35);
-            this.iBtnProveedor.TabIndex = 2;
+            this.iBtnProveedor.TabIndex = 5;
             this.iBtnProveedor.Text = "    Proveedor";
             this.iBtnProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnProveedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -173,7 +173,7 @@
             this.iBtnProductos.Name = "iBtnProductos";
             this.iBtnProductos.Rotation = 0D;
             this.iBtnProductos.Size = new System.Drawing.Size(160, 35);
-            this.iBtnProductos.TabIndex = 3;
+            this.iBtnProductos.TabIndex = 6;
             this.iBtnProductos.Text = "    Productos";
             this.iBtnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnProductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -201,7 +201,7 @@
             this.iBtnCalidad.Name = "iBtnCalidad";
             this.iBtnCalidad.Rotation = 0D;
             this.iBtnCalidad.Size = new System.Drawing.Size(160, 35);
-            this.iBtnCalidad.TabIndex = 4;
+            this.iBtnCalidad.TabIndex = 7;
             this.iBtnCalidad.Text = "    Control Calidad";
             this.iBtnCalidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnCalidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -229,7 +229,7 @@
             this.iBtnAlmacen.Name = "iBtnAlmacen";
             this.iBtnAlmacen.Rotation = 0D;
             this.iBtnAlmacen.Size = new System.Drawing.Size(160, 35);
-            this.iBtnAlmacen.TabIndex = 5;
+            this.iBtnAlmacen.TabIndex = 8;
             this.iBtnAlmacen.Text = "    Almacén";
             this.iBtnAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -257,7 +257,7 @@
             this.iBtnLlamadas.Name = "iBtnLlamadas";
             this.iBtnLlamadas.Rotation = 0D;
             this.iBtnLlamadas.Size = new System.Drawing.Size(160, 35);
-            this.iBtnLlamadas.TabIndex = 6;
+            this.iBtnLlamadas.TabIndex = 9;
             this.iBtnLlamadas.Text = "    Llamadas";
             this.iBtnLlamadas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnLlamadas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -318,7 +318,7 @@
             this.iBtnLogout.Name = "iBtnLogout";
             this.iBtnLogout.Rotation = 0D;
             this.iBtnLogout.Size = new System.Drawing.Size(147, 25);
-            this.iBtnLogout.TabIndex = 7;
+            this.iBtnLogout.TabIndex = 2;
             this.iBtnLogout.Text = "    Cerrar sesión";
             this.iBtnLogout.UseVisualStyleBackColor = true;
             this.iBtnLogout.Click += new System.EventHandler(this.iBtnLogout_Click_1);
@@ -382,7 +382,7 @@
             this.iBtnUser.Name = "iBtnUser";
             this.iBtnUser.Rotation = 0D;
             this.iBtnUser.Size = new System.Drawing.Size(31, 46);
-            this.iBtnUser.TabIndex = 4;
+            this.iBtnUser.TabIndex = 1;
             this.iBtnUser.UseVisualStyleBackColor = false;
             this.iBtnUser.Click += new System.EventHandler(this.iBtnUser_Click);
             // 

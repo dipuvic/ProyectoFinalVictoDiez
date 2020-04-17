@@ -35,7 +35,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(762, 576);
+            this.ClientSize = new System.Drawing.Size(937, 659);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormEquipo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

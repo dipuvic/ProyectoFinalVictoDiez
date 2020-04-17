@@ -34,6 +34,12 @@ namespace DataAccess
             comando.ExecuteNonQuery();
             conexion.CerrarConexion();
         }
+
+        public void EditarCliente(string nombre, string nif, string calle, string municipio, string provincia, string codpostal, int telf, string email)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText= "UPDATE cliente SET nombre='" + nombre + "', nif='" + nif + "', calle='"+calle+"', municipio='"+municipio+'",provincia="'+provincia+'",codpostal="'+codpostal+'",telf="+telf+",email="'+email+'"   ";
+        }
         
 
     }

@@ -52,6 +52,8 @@
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnIngresar = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -67,18 +69,19 @@
             this.DgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvClientes.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DgvClientes.Location = new System.Drawing.Point(12, 310);
+            this.DgvClientes.Location = new System.Drawing.Point(24, 367);
             this.DgvClientes.Name = "DgvClientes";
-            this.DgvClientes.Size = new System.Drawing.Size(754, 280);
+            this.DgvClientes.Size = new System.Drawing.Size(790, 280);
             this.DgvClientes.TabIndex = 0;
             // 
             // LblTituloMostrar
             // 
+            this.LblTituloMostrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblTituloMostrar.AutoSize = true;
             this.LblTituloMostrar.BackColor = System.Drawing.Color.Transparent;
             this.LblTituloMostrar.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTituloMostrar.ForeColor = System.Drawing.Color.White;
-            this.LblTituloMostrar.Location = new System.Drawing.Point(248, 284);
+            this.LblTituloMostrar.Location = new System.Drawing.Point(288, 341);
             this.LblTituloMostrar.Name = "LblTituloMostrar";
             this.LblTituloMostrar.Size = new System.Drawing.Size(265, 23);
             this.LblTituloMostrar.TabIndex = 1;
@@ -87,25 +90,28 @@
             // LblInsertarClientes
             // 
             this.LblInsertarClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblInsertarClientes.AutoSize = true;
             this.LblInsertarClientes.BackColor = System.Drawing.Color.Transparent;
             this.LblInsertarClientes.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblInsertarClientes.ForeColor = System.Drawing.Color.White;
-            this.LblInsertarClientes.Location = new System.Drawing.Point(272, 9);
+            this.LblInsertarClientes.Location = new System.Drawing.Point(3, 8);
+            this.LblInsertarClientes.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
             this.LblInsertarClientes.Name = "LblInsertarClientes";
-            this.LblInsertarClientes.Size = new System.Drawing.Size(208, 23);
+            this.LblInsertarClientes.Size = new System.Drawing.Size(595, 23);
             this.LblInsertarClientes.TabIndex = 2;
             this.LblInsertarClientes.Text = "Ingresar nuevo cliente";
+            this.LblInsertarClientes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel1.Controls.Add(this.LblInsertarClientes);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(133, 51);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(184, 34);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(568, 217);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(598, 274);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // flowLayoutPanel2
@@ -126,10 +132,10 @@
             this.flowLayoutPanel2.Controls.Add(this.TxtTelf);
             this.flowLayoutPanel2.Controls.Add(this.LblEmail);
             this.flowLayoutPanel2.Controls.Add(this.TxtEmail);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(20, 34);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(335, 204);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(335, 213);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // LblNombre
@@ -4747,16 +4753,16 @@
             this.flowLayoutPanel3.Controls.Add(this.panel1);
             this.flowLayoutPanel3.Controls.Add(this.BtnIngresar);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(338, 3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(358, 37);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(222, 201);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(201, 210);
             this.flowLayoutPanel3.TabIndex = 2;
             // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(211, 56);
+            this.panel1.Size = new System.Drawing.Size(198, 32);
             this.panel1.TabIndex = 3;
             // 
             // BtnIngresar
@@ -4766,7 +4772,7 @@
             this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIngresar.ForeColor = System.Drawing.Color.White;
-            this.BtnIngresar.Location = new System.Drawing.Point(56, 65);
+            this.BtnIngresar.Location = new System.Drawing.Point(49, 41);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(105, 32);
             this.BtnIngresar.TabIndex = 9;
@@ -4774,14 +4780,43 @@
             this.BtnIngresar.UseVisualStyleBackColor = false;
             this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnEditar.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditar.ForeColor = System.Drawing.Color.White;
+            this.BtnEditar.Location = new System.Drawing.Point(820, 463);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(105, 32);
+            this.BtnEditar.TabIndex = 11;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = false;
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnEliminar.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.ForeColor = System.Drawing.Color.White;
+            this.BtnEliminar.Location = new System.Drawing.Point(820, 517);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(105, 32);
+            this.BtnEliminar.TabIndex = 12;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = false;
+            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(778, 615);
+            this.ClientSize = new System.Drawing.Size(937, 659);
+            this.Controls.Add(this.BtnEliminar);
+            this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.LblInsertarClientes);
             this.Controls.Add(this.LblTituloMostrar);
             this.Controls.Add(this.DgvClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -4824,5 +4859,7 @@
         private System.Windows.Forms.Button BtnIngresar;
         private System.Windows.Forms.ComboBox CbxMunicipio;
         private System.Windows.Forms.ComboBox CbxProvincia;
+        private System.Windows.Forms.Button BtnEditar;
+        private System.Windows.Forms.Button BtnEliminar;
     }
 }

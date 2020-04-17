@@ -65,7 +65,7 @@
             this.FlpUsuario.Controls.Add(this.iPbxUsuario);
             this.FlpUsuario.Controls.Add(this.flowLayoutPanel2);
             this.FlpUsuario.Controls.Add(this.flowLayoutPanel1);
-            this.FlpUsuario.Location = new System.Drawing.Point(82, 67);
+            this.FlpUsuario.Location = new System.Drawing.Point(161, 89);
             this.FlpUsuario.Name = "FlpUsuario";
             this.FlpUsuario.Size = new System.Drawing.Size(606, 336);
             this.FlpUsuario.TabIndex = 0;
@@ -305,7 +305,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(778, 615);
+            this.ClientSize = new System.Drawing.Size(937, 659);
             this.Controls.Add(this.FlpUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUsuario";

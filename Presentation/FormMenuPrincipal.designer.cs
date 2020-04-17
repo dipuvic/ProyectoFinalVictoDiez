@@ -65,7 +65,7 @@
             this.flowLayoutPanelMenu.Controls.Add(this.iBtnLlamadas);
             this.flowLayoutPanelMenu.Location = new System.Drawing.Point(0, 259);
             this.flowLayoutPanelMenu.Name = "flowLayoutPanelMenu";
-            this.flowLayoutPanelMenu.Size = new System.Drawing.Size(160, 325);
+            this.flowLayoutPanelMenu.Size = new System.Drawing.Size(160, 353);
             this.flowLayoutPanelMenu.TabIndex = 1;
             // 
             // iBtnEquipo
@@ -299,7 +299,7 @@
             this.PanelVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelVertical.Location = new System.Drawing.Point(0, 0);
             this.PanelVertical.Name = "PanelVertical";
-            this.PanelVertical.Size = new System.Drawing.Size(160, 615);
+            this.PanelVertical.Size = new System.Drawing.Size(160, 659);
             this.PanelVertical.TabIndex = 2;
             // 
             // iBtnLogout
@@ -413,7 +413,7 @@
             this.PanelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelFormularios.Location = new System.Drawing.Point(160, 0);
             this.PanelFormularios.Name = "PanelFormularios";
-            this.PanelFormularios.Size = new System.Drawing.Size(778, 615);
+            this.PanelFormularios.Size = new System.Drawing.Size(937, 659);
             this.PanelFormularios.TabIndex = 3;
             // 
             // panel1
@@ -422,14 +422,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(3, 615);
+            this.panel1.Size = new System.Drawing.Size(3, 659);
             this.panel1.TabIndex = 2;
             // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 615);
+            this.ClientSize = new System.Drawing.Size(1097, 659);
             this.Controls.Add(this.PanelFormularios);
             this.Controls.Add(this.PanelVertical);
             this.Name = "FormMenuPrincipal";

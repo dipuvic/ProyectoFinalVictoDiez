@@ -57,7 +57,7 @@ namespace DataAccess
         public void BuscarProducto(int referencia, string descripcion)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM producto WHERE referencia='%"+referencia+ "%' OR '%'" + referencia + "'%';";
+            comando.CommandText = "SELECT * FROM producto WHERE referencia='%"+ referencia + "%' OR '%'" + descripcion + "'%';";
             comando.CommandType = CommandType.Text;
             comando.ExecuteNonQuery();
             conexion.CerrarConexion();

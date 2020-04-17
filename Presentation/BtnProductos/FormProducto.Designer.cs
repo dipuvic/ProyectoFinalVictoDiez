@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.LblNombre = new System.Windows.Forms.Label();
             this.TxtReferencia = new System.Windows.Forms.TextBox();
             this.LblNIF = new System.Windows.Forms.Label();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
-            this.LblCalle = new System.Windows.Forms.Label();
+            this.LblCategoria = new System.Windows.Forms.Label();
             this.TxtPrecio = new System.Windows.Forms.TextBox();
+            this.LblCalle = new System.Windows.Forms.Label();
+            this.TxtCategoria = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnIngresar = new System.Windows.Forms.Button();
@@ -47,18 +49,16 @@
             this.LblListadoProducto = new System.Windows.Forms.Label();
             this.LblEdicionProducto = new System.Windows.Forms.Label();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.LblCategoria = new System.Windows.Forms.Label();
-            this.TxtCategoria = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.LblRefBuscar = new System.Windows.Forms.Label();
             this.TxtRefBuscar = new System.Windows.Forms.TextBox();
             this.LblDescBuscar = new System.Windows.Forms.Label();
             this.TxtDescripBuscar = new System.Windows.Forms.TextBox();
             this.LblCatBuscar = new System.Windows.Forms.Label();
             this.TxtCatBuscar = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
@@ -147,6 +147,29 @@
             this.TxtDescripcion.Size = new System.Drawing.Size(230, 20);
             this.TxtDescripcion.TabIndex = 3;
             // 
+            // LblCategoria
+            // 
+            this.LblCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCategoria.ForeColor = System.Drawing.Color.White;
+            this.LblCategoria.Location = new System.Drawing.Point(0, 55);
+            this.LblCategoria.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.LblCategoria.Name = "LblCategoria";
+            this.LblCategoria.Size = new System.Drawing.Size(80, 20);
+            this.LblCategoria.TabIndex = 7;
+            this.LblCategoria.Text = "Categoria:";
+            this.LblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TxtPrecio
+            // 
+            this.TxtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtPrecio.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.TxtPrecio.Location = new System.Drawing.Point(83, 55);
+            this.TxtPrecio.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtPrecio.Name = "TxtPrecio";
+            this.TxtPrecio.Size = new System.Drawing.Size(230, 20);
+            this.TxtPrecio.TabIndex = 6;
+            // 
             // LblCalle
             // 
             this.LblCalle.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -160,15 +183,15 @@
             this.LblCalle.Text = "Precio:";
             this.LblCalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // TxtPrecio
+            // TxtCategoria
             // 
-            this.TxtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtPrecio.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtPrecio.Location = new System.Drawing.Point(83, 55);
-            this.TxtPrecio.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
-            this.TxtPrecio.Name = "TxtPrecio";
-            this.TxtPrecio.Size = new System.Drawing.Size(230, 20);
-            this.TxtPrecio.TabIndex = 6;
+            this.TxtCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtCategoria.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.TxtCategoria.Location = new System.Drawing.Point(83, 80);
+            this.TxtCategoria.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtCategoria.Name = "TxtCategoria";
+            this.TxtCategoria.Size = new System.Drawing.Size(230, 20);
+            this.TxtCategoria.TabIndex = 8;
             // 
             // flowLayoutPanel3
             // 
@@ -207,33 +230,33 @@
             this.DgvProducto.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DgvProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DgvProducto.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvProducto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvProducto.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvProducto.DefaultCellStyle = dataGridViewCellStyle17;
-            this.DgvProducto.Location = new System.Drawing.Point(71, 272);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvProducto.DefaultCellStyle = dataGridViewCellStyle5;
+            this.DgvProducto.Location = new System.Drawing.Point(150, 294);
             this.DgvProducto.Name = "DgvProducto";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvProducto.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvProducto.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DgvProducto.Size = new System.Drawing.Size(383, 300);
             this.DgvProducto.TabIndex = 5;
             // 
@@ -254,7 +277,7 @@
             this.LblListadoProducto.BackColor = System.Drawing.Color.Transparent;
             this.LblListadoProducto.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblListadoProducto.ForeColor = System.Drawing.Color.White;
-            this.LblListadoProducto.Location = new System.Drawing.Point(185, 246);
+            this.LblListadoProducto.Location = new System.Drawing.Point(264, 268);
             this.LblListadoProducto.Name = "LblListadoProducto";
             this.LblListadoProducto.Size = new System.Drawing.Size(171, 23);
             this.LblListadoProducto.TabIndex = 8;
@@ -279,33 +302,10 @@
             this.flowLayoutPanel5.Controls.Add(this.LblEdicionProducto);
             this.flowLayoutPanel5.Controls.Add(this.groupBox1);
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(71, 26);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(150, 48);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(607, 203);
             this.flowLayoutPanel5.TabIndex = 10;
-            // 
-            // LblCategoria
-            // 
-            this.LblCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCategoria.ForeColor = System.Drawing.Color.White;
-            this.LblCategoria.Location = new System.Drawing.Point(0, 55);
-            this.LblCategoria.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.LblCategoria.Name = "LblCategoria";
-            this.LblCategoria.Size = new System.Drawing.Size(80, 20);
-            this.LblCategoria.TabIndex = 7;
-            this.LblCategoria.Text = "Categoria:";
-            this.LblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TxtCategoria
-            // 
-            this.TxtCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtCategoria.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtCategoria.Location = new System.Drawing.Point(83, 80);
-            this.TxtCategoria.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
-            this.TxtCategoria.Name = "TxtCategoria";
-            this.TxtCategoria.Size = new System.Drawing.Size(230, 20);
-            this.TxtCategoria.TabIndex = 8;
             // 
             // BtnBuscar
             // 
@@ -330,7 +330,7 @@
             this.flowLayoutPanel6.Controls.Add(this.flowLayoutPanel7);
             this.flowLayoutPanel6.Controls.Add(this.BtnBuscar);
             this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(476, 379);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(555, 401);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(257, 173);
             this.flowLayoutPanel6.TabIndex = 15;
@@ -349,6 +349,19 @@
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(242, 107);
             this.flowLayoutPanel7.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(237, 20);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Buscar producto";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LblRefBuscar
             // 
@@ -422,19 +435,6 @@
             this.TxtCatBuscar.Size = new System.Drawing.Size(154, 21);
             this.TxtCatBuscar.TabIndex = 9;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 5);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 20);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Buscar producto";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // BtnEliminar
             // 
             this.BtnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -442,7 +442,7 @@
             this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminar.Location = new System.Drawing.Point(504, 311);
+            this.BtnEliminar.Location = new System.Drawing.Point(583, 345);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(199, 32);
             this.BtnEliminar.TabIndex = 19;
@@ -457,7 +457,7 @@
             this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEditar.ForeColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(504, 272);
+            this.BtnEditar.Location = new System.Drawing.Point(583, 306);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(199, 32);
             this.BtnEditar.TabIndex = 18;
@@ -470,7 +470,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(778, 615);
+            this.ClientSize = new System.Drawing.Size(937, 659);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.flowLayoutPanel6);

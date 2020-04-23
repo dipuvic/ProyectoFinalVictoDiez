@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Common.Cache;
 using Presentation.BtnClientes;
+using Presentation.BtnCalidad;
 
 namespace Presentation
 {
@@ -170,7 +171,7 @@ namespace Presentation
 
         private void iBtnCalidad_Click(object sender, EventArgs e)
         {
-            //  AbrirFormulario<FormCalidad>();
+            AbrirFormulario<FormCalidad>();
             CleanMenu();
             iBtnCalidad.BackColor = Color.DimGray;
         }

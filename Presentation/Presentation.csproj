@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BtnCalidad\FormCalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BtnCalidad\FormCalidad.Designer.cs">
+      <DependentUpon>FormCalidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="BtnClientes\FormClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,12 @@
     </Compile>
     <Compile Include="BtnEquipo\FormEquipo.Designer.cs">
       <DependentUpon>FormEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BtnLlamadas\FormLlamada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BtnLlamadas\FormLlamada.Designer.cs">
+      <DependentUpon>FormLlamada.cs</DependentUpon>
     </Compile>
     <Compile Include="iBtnUsuario\FormUsuario.cs">
       <SubType>Form</SubType>
@@ -93,11 +105,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BtnCalidad\FormCalidad.resx">
+      <DependentUpon>FormCalidad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BtnClientes\FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BtnEquipo\FormEquipo.resx">
       <DependentUpon>FormEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnLlamadas\FormLlamada.resx">
+      <DependentUpon>FormLlamada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="iBtnUsuario\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
@@ -150,8 +168,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BtnAlmacen\" />
-    <Folder Include="BtnCalidad\" />
-    <Folder Include="BtnLlamadas\" />
     <Folder Include="BtnProveedor\" />
   </ItemGroup>
   <ItemGroup>

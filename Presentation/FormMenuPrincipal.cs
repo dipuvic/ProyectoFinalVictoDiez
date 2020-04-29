@@ -12,6 +12,7 @@ using FontAwesome.Sharp;
 using Common.Cache;
 using Presentation.BtnClientes;
 using Presentation.BtnCalidad;
+using Presentation.BtnLlamadas;
 
 namespace Presentation
 {
@@ -185,7 +186,7 @@ namespace Presentation
 
         private void iBtnLlamadas_Click(object sender, EventArgs e)
         {
-            //  AbrirFormulario<FormLlamadas>();
+            AbrirFormulario<FormLlamada>();
             CleanMenu();
             iBtnLlamadas.BackColor = Color.DimGray;
         }

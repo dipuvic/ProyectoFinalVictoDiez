@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain;
 
 namespace Presentation.BtnLlamadas
 {
@@ -16,5 +17,20 @@ namespace Presentation.BtnLlamadas
         {
             InitializeComponent();
         }
+
+        private void FormLlamada_Load(object sender, EventArgs e)
+        {
+            ListarUsuarios();
+        }
+
+        private void ListarUsuarios()
+        {
+            D_Llamadas objLlamadas = new D_Llamadas();
+            CmbUsuario.DataSource = objLlamadas.ListarUsuarios();
+            CmbUsuario.DisplayMember = "Persona";
+            CmbUsuario.ValueMember = "id_user";
+            
+        }
+
     }
 }

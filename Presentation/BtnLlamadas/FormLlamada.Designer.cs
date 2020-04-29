@@ -30,6 +30,7 @@
         {
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.TxtObservacion = new System.Windows.Forms.TextBox();
             this.TxtProblema = new System.Windows.Forms.TextBox();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
@@ -39,10 +40,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.CbxCompañero = new System.Windows.Forms.ComboBox();
+            this.CmbUsuario = new System.Windows.Forms.ComboBox();
             this.TxtRef = new System.Windows.Forms.TextBox();
             this.LblTituloMostrar = new System.Windows.Forms.Label();
-            this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.DgvRegistro = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvRegistro)).BeginInit();
@@ -73,7 +73,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
             this.tableLayoutPanel1.Controls.Add(this.TxtUsuario, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.TxtObservacion, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.TxtProblema, 4, 1);
@@ -84,7 +84,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label6, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.CbxCompañero, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CmbUsuario, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.TxtRef, 2, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 77);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -95,19 +95,36 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(897, 139);
             this.tableLayoutPanel1.TabIndex = 12;
             // 
+            // TxtUsuario
+            // 
+            this.TxtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            this.TxtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtUsuario.Enabled = false;
+            this.TxtUsuario.ForeColor = System.Drawing.Color.White;
+            this.TxtUsuario.Location = new System.Drawing.Point(130, 89);
+            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.TxtUsuario.Multiline = true;
+            this.TxtUsuario.Name = "TxtUsuario";
+            this.TxtUsuario.ReadOnly = true;
+            this.TxtUsuario.Size = new System.Drawing.Size(129, 20);
+            this.TxtUsuario.TabIndex = 23;
+            this.TxtUsuario.Text = "Carlos Quintero";
+            this.TxtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // TxtObservacion
             // 
             this.TxtObservacion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtObservacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.TxtObservacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtObservacion.ForeColor = System.Drawing.Color.White;
-            this.TxtObservacion.Location = new System.Drawing.Point(727, 61);
+            this.TxtObservacion.Location = new System.Drawing.Point(725, 61);
             this.TxtObservacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtObservacion.MaxLength = 160;
             this.TxtObservacion.Multiline = true;
             this.TxtObservacion.Name = "TxtObservacion";
             this.TxtObservacion.Size = new System.Drawing.Size(165, 72);
-            this.TxtObservacion.TabIndex = 22;
+            this.TxtObservacion.TabIndex = 5;
             this.TxtObservacion.Text = "El otro día no podía correr por la playa debido a que estuve concentrado en poder" +
     " irme a correr por el paraíso llamado Urá.";
             // 
@@ -117,14 +134,14 @@
             this.TxtProblema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.TxtProblema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtProblema.ForeColor = System.Drawing.Color.White;
-            this.TxtProblema.Location = new System.Drawing.Point(534, 61);
+            this.TxtProblema.Location = new System.Drawing.Point(530, 61);
             this.TxtProblema.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtProblema.MaxLength = 160;
             this.TxtProblema.Multiline = true;
             this.TxtProblema.Name = "TxtProblema";
             this.TxtProblema.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.TxtProblema.Size = new System.Drawing.Size(184, 72);
-            this.TxtProblema.TabIndex = 21;
+            this.TxtProblema.TabIndex = 4;
             this.TxtProblema.Text = "El otro día no podía correr por la playa debido a que estuve concentrado en poder" +
     " irme a correr por el paraíso llamado Urá.";
             // 
@@ -135,20 +152,20 @@
             this.TxtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtDescripcion.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.TxtDescripcion.ForeColor = System.Drawing.Color.White;
-            this.TxtDescripcion.Location = new System.Drawing.Point(351, 74);
+            this.TxtDescripcion.Location = new System.Drawing.Point(347, 74);
             this.TxtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtDescripcion.MaxLength = 50;
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.Size = new System.Drawing.Size(174, 46);
-            this.TxtDescripcion.TabIndex = 20;
+            this.TxtDescripcion.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 12);
+            this.label1.Location = new System.Drawing.Point(23, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 36);
@@ -161,7 +178,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(157, 12);
+            this.label2.Location = new System.Drawing.Point(154, 12);
             this.label2.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 36);
@@ -174,7 +191,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(271, 12);
+            this.label3.Location = new System.Drawing.Point(267, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 36);
@@ -187,7 +204,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(398, 12);
+            this.label4.Location = new System.Drawing.Point(394, 12);
             this.label4.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 36);
@@ -200,7 +217,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(576, 12);
+            this.label5.Location = new System.Drawing.Point(572, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 36);
@@ -213,7 +230,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(752, 12);
+            this.label6.Location = new System.Drawing.Point(750, 12);
             this.label6.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 36);
@@ -221,14 +238,14 @@
             this.label6.Text = "Observación";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CbxCompañero
+            // CmbUsuario
             // 
-            this.CbxCompañero.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CbxCompañero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            this.CbxCompañero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CbxCompañero.ForeColor = System.Drawing.Color.White;
-            this.CbxCompañero.FormattingEnabled = true;
-            this.CbxCompañero.Items.AddRange(new object[] {
+            this.CmbUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CmbUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            this.CmbUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CmbUsuario.ForeColor = System.Drawing.Color.White;
+            this.CmbUsuario.FormattingEnabled = true;
+            this.CmbUsuario.Items.AddRange(new object[] {
             "Alegría-Dulantzi",
             "Amurrio",
             "Añana",
@@ -2438,27 +2455,25 @@
             "Val do Dubra",
             "Valdoviño",
             "Vedra"});
-            this.CbxCompañero.Location = new System.Drawing.Point(4, 89);
-            this.CbxCompañero.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
-            this.CbxCompañero.Name = "CbxCompañero";
-            this.CbxCompañero.Size = new System.Drawing.Size(121, 21);
-            this.CbxCompañero.TabIndex = 18;
-            this.CbxCompañero.Text = "Carlos Quintero";
+            this.CmbUsuario.Location = new System.Drawing.Point(4, 89);
+            this.CmbUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.CmbUsuario.Name = "CmbUsuario";
+            this.CmbUsuario.Size = new System.Drawing.Size(119, 21);
+            this.CmbUsuario.TabIndex = 1;
+            this.CmbUsuario.Text = "Carlos Quintero";
             // 
             // TxtRef
             // 
             this.TxtRef.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtRef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.TxtRef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtRef.Enabled = false;
             this.TxtRef.ForeColor = System.Drawing.Color.White;
-            this.TxtRef.Location = new System.Drawing.Point(270, 89);
+            this.TxtRef.Location = new System.Drawing.Point(266, 89);
             this.TxtRef.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
-            this.TxtRef.Multiline = true;
+            this.TxtRef.MaxLength = 5;
             this.TxtRef.Name = "TxtRef";
             this.TxtRef.Size = new System.Drawing.Size(72, 20);
-            this.TxtRef.TabIndex = 17;
-            this.TxtRef.Text = "80000";
+            this.TxtRef.TabIndex = 2;
             this.TxtRef.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LblTituloMostrar
@@ -2473,22 +2488,6 @@
             this.LblTituloMostrar.Size = new System.Drawing.Size(178, 23);
             this.LblTituloMostrar.TabIndex = 11;
             this.LblTituloMostrar.Text = "Registro telefónico";
-            // 
-            // TxtUsuario
-            // 
-            this.TxtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            this.TxtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtUsuario.Enabled = false;
-            this.TxtUsuario.ForeColor = System.Drawing.Color.White;
-            this.TxtUsuario.Location = new System.Drawing.Point(132, 89);
-            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
-            this.TxtUsuario.Multiline = true;
-            this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(131, 20);
-            this.TxtUsuario.TabIndex = 23;
-            this.TxtUsuario.Text = "Carlos Quintero";
-            this.TxtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DgvRegistro
             // 
@@ -2511,6 +2510,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLlamada";
             this.Text = "FormLlamada";
+            this.Load += new System.EventHandler(this.FormLlamada_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvRegistro)).EndInit();
@@ -2532,7 +2532,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox CbxCompañero;
+        private System.Windows.Forms.ComboBox CmbUsuario;
         private System.Windows.Forms.TextBox TxtRef;
         private System.Windows.Forms.Label LblTituloMostrar;
         private System.Windows.Forms.TextBox TxtUsuario;

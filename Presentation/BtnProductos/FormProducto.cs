@@ -22,6 +22,24 @@ namespace Presentation
         {
             InitializeComponent();
         }
+
+        private void FormProducto_Load(object sender, EventArgs e)
+        {
+            MostrarProductos();
+            ListarCategorias();
+        }
+
+        private void ListarCategorias()
+        {
+            D_Productos objD = new D_Productos();
+            CmbCategoria.DataSource = objD.ListarCategorias();
+            CmbCategoria.DisplayMember = "catpadre";
+            CmbCategoria.ValueMember = "idcat";
+            CmbBCategoria.DataSource = objD.ListarCategorias();
+            CmbBCategoria.DisplayMember = "catpadre";
+            CmbBCategoria.ValueMember = "idcat";
+        }
+
         private void MostrarProductos()
         {
             D_Productos objetoD = new D_Productos();
@@ -31,25 +49,21 @@ namespace Presentation
         {
             TxtReferencia.Clear();
             TxtDescripcion.Clear();
-            TxtCategoria.Clear();
             TxtPrecio.Clear();
-        }
-
-        private void FormProducto_Load(object sender, EventArgs e)
-        {
-            MostrarProductos();
         }
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(CmbCategoria.SelectedIndex.ToString());
+            //INGRESAR NUEVO PRODUCTO en la tabla producto de nuestra Base de Datos.
+            
             if (editar==false)
             {
-                //INGRESAR NUEVO PRODUCTO en la tabla producto de nuestra Base de Datos.
                 try
                 {
                     D_Productos objetoinsertar = new D_Productos();
-
-                    objetoD.InsertarProducto(TxtDescripcion.Text, TxtPrecio.Text);
+                    
+                    objetoD.InsertarProducto(CmbCategoria.SelectedIndex.ToString(), TxtDescripcion.Text, TxtPrecio.Text);
                     MessageBox.Show("Se ha AÑADIDO un nuevo producto.");
                     LimpiarFormulario();
                     MostrarProductos();
@@ -85,7 +99,7 @@ namespace Presentation
         {
             if (DgvProducto.SelectedRows.Count > 0)
             {
-                idreferencia = DgvProducto.CurrentRow.Cells["referencia"].Value.ToString();
+                idreferencia = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
                 objetoD.EliminarProducto(idreferencia);
                 MostrarProductos();
             }
@@ -98,28 +112,14 @@ namespace Presentation
                 editar = true;
                 BtnIngresar.Text = "Guardar";
                 LblEdicionProducto.Text = "Editar producto seleccionado";
-                TxtReferencia.Text = DgvProducto.CurrentRow.Cells["referencia"].Value.ToString();
-                TxtDescripcion.Text = DgvProducto.CurrentRow.Cells["descripcion"].Value.ToString();
-                TxtPrecio.Text = DgvProducto.CurrentRow.Cells["precio"].Value.ToString();
-                idreferencia = DgvProducto.CurrentRow.Cells["referencia"].Value.ToString();
+                TxtReferencia.Text = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
+                TxtDescripcion.Text = DgvProducto.CurrentRow.Cells["Descripción"].Value.ToString();
+                TxtPrecio.Text = DgvProducto.CurrentRow.Cells["Precio"].Value.ToString();
+                idreferencia = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
             }
             else
             {
                 MessageBox.Show("Seleccione una fila de la tabla");
-            }
-        }
-
-        private void BtnBuscar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                objetoD.BuscarProducto(TxtRefBuscar.Text, TxtDescripBuscar.Text);
-                MostrarProductos();
-                MessageBox.Show("Se ha realizado la búsqueda.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No se ha podido buscar el producto por: " + ex);
             }
         }
     }

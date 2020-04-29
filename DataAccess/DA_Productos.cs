@@ -17,10 +17,22 @@ namespace DataAccess
         MySqlDataReader leerprod;
         DataTable tabla = new DataTable();
 
+        public DataTable ListarCategorias()
+        {
+            DataTable tabla = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT idcat, catpadre FROM categoria;";
+            leerprod = comando.ExecuteReader();
+            tabla.Load(leerprod);
+            leerprod.Close();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+
         public DataTable MostrarProductos()
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM producto;";
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto INNER JOIN categoria ON producto.idcat = categoria.idcat; ";
             leerprod = comando.ExecuteReader();
             tabla.Load(leerprod);
             conexion.CerrarConexion();
@@ -28,10 +40,10 @@ namespace DataAccess
             return tabla;
         }
 
-        public void InsertarProducto(string descripcion, string precio)
+        public void InsertarProducto(int idcat, string descripcion, string precio)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "INSERT INTO producto (descripcion,precio) VALUE ('"+descripcion+"', "+precio+");";
+            comando.CommandText = "INSERT INTO producto (idcat,descripcion,precio) VALUE ("+idcat+", '"+descripcion+"', "+precio+");";
             comando.CommandType = CommandType.Text;
             comando.ExecuteNonQuery();
             conexion.CerrarConexion();

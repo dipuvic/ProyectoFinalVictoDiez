@@ -21,6 +21,7 @@ namespace Presentation.BtnLlamadas
         private void FormLlamada_Load(object sender, EventArgs e)
         {
             ListarUsuarios();
+            MostrarRegistroLlamadas();
         }
 
         private void ListarUsuarios()
@@ -29,8 +30,12 @@ namespace Presentation.BtnLlamadas
             CmbUsuario.DataSource = objLlamadas.ListarUsuarios();
             CmbUsuario.DisplayMember = "Persona";
             CmbUsuario.ValueMember = "id_user";
-            
         }
 
+        private void MostrarRegistroLlamadas()
+        {
+            D_Llamadas objD = new D_Llamadas();
+            DgvRegistro.DataSource = objD.MostrarRegistroLlamadas();
+        }
     }
 }

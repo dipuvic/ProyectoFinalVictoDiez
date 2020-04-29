@@ -12,10 +12,20 @@ namespace Domain
     public class D_Llamadas
     {
         private DA_Llamadas objLlamadas = new DA_Llamadas();
+
+
         public DataTable ListarUsuarios()
         {
             DataTable tabla = new DataTable();
             tabla = objLlamadas.ListarUsuarios();
+            return tabla;
+        }
+
+        public DataTable MostrarRegistroLlamadas()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objLlamadas.MostrarRegistroLlamadas();
+
             return tabla;
         }
     }

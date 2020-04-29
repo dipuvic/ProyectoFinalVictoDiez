@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
@@ -70,10 +74,10 @@
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.07018F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.92982F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
             this.tableLayoutPanel1.Controls.Add(this.TxtUsuario, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.TxtObservacion, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.TxtProblema, 4, 1);
@@ -102,12 +106,12 @@
             this.TxtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUsuario.Enabled = false;
             this.TxtUsuario.ForeColor = System.Drawing.Color.White;
-            this.TxtUsuario.Location = new System.Drawing.Point(130, 89);
+            this.TxtUsuario.Location = new System.Drawing.Point(129, 89);
             this.TxtUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.TxtUsuario.Multiline = true;
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.ReadOnly = true;
-            this.TxtUsuario.Size = new System.Drawing.Size(129, 20);
+            this.TxtUsuario.Size = new System.Drawing.Size(128, 20);
             this.TxtUsuario.TabIndex = 23;
             this.TxtUsuario.Text = "Carlos Quintero";
             this.TxtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -118,12 +122,12 @@
             this.TxtObservacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.TxtObservacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtObservacion.ForeColor = System.Drawing.Color.White;
-            this.TxtObservacion.Location = new System.Drawing.Point(725, 61);
+            this.TxtObservacion.Location = new System.Drawing.Point(721, 61);
             this.TxtObservacion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtObservacion.MaxLength = 160;
             this.TxtObservacion.Multiline = true;
             this.TxtObservacion.Name = "TxtObservacion";
-            this.TxtObservacion.Size = new System.Drawing.Size(165, 72);
+            this.TxtObservacion.Size = new System.Drawing.Size(171, 72);
             this.TxtObservacion.TabIndex = 5;
             this.TxtObservacion.Text = "El otro día no podía correr por la playa debido a que estuve concentrado en poder" +
     " irme a correr por el paraíso llamado Urá.";
@@ -134,13 +138,13 @@
             this.TxtProblema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.TxtProblema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtProblema.ForeColor = System.Drawing.Color.White;
-            this.TxtProblema.Location = new System.Drawing.Point(530, 61);
+            this.TxtProblema.Location = new System.Drawing.Point(514, 61);
             this.TxtProblema.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtProblema.MaxLength = 160;
             this.TxtProblema.Multiline = true;
             this.TxtProblema.Name = "TxtProblema";
             this.TxtProblema.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.TxtProblema.Size = new System.Drawing.Size(184, 72);
+            this.TxtProblema.Size = new System.Drawing.Size(198, 72);
             this.TxtProblema.TabIndex = 4;
             this.TxtProblema.Text = "El otro día no podía correr por la playa debido a que estuve concentrado en poder" +
     " irme a correr por el paraíso llamado Urá.";
@@ -152,12 +156,12 @@
             this.TxtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtDescripcion.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.TxtDescripcion.ForeColor = System.Drawing.Color.White;
-            this.TxtDescripcion.Location = new System.Drawing.Point(347, 74);
+            this.TxtDescripcion.Location = new System.Drawing.Point(336, 74);
             this.TxtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtDescripcion.MaxLength = 50;
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(174, 46);
+            this.TxtDescripcion.Size = new System.Drawing.Size(169, 46);
             this.TxtDescripcion.TabIndex = 3;
             // 
             // label1
@@ -178,7 +182,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(154, 12);
+            this.label2.Location = new System.Drawing.Point(153, 12);
             this.label2.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 36);
@@ -191,7 +195,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(267, 12);
+            this.label3.Location = new System.Drawing.Point(261, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 36);
@@ -204,7 +208,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(394, 12);
+            this.label4.Location = new System.Drawing.Point(380, 12);
             this.label4.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 36);
@@ -217,7 +221,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(572, 12);
+            this.label5.Location = new System.Drawing.Point(563, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 36);
@@ -230,7 +234,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(750, 12);
+            this.label6.Location = new System.Drawing.Point(749, 12);
             this.label6.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 36);
@@ -2458,7 +2462,7 @@
             this.CmbUsuario.Location = new System.Drawing.Point(4, 89);
             this.CmbUsuario.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.CmbUsuario.Name = "CmbUsuario";
-            this.CmbUsuario.Size = new System.Drawing.Size(119, 21);
+            this.CmbUsuario.Size = new System.Drawing.Size(118, 21);
             this.CmbUsuario.TabIndex = 1;
             this.CmbUsuario.Text = "Carlos Quintero";
             // 
@@ -2468,11 +2472,11 @@
             this.TxtRef.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.TxtRef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtRef.ForeColor = System.Drawing.Color.White;
-            this.TxtRef.Location = new System.Drawing.Point(266, 89);
+            this.TxtRef.Location = new System.Drawing.Point(264, 89);
             this.TxtRef.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.TxtRef.MaxLength = 5;
             this.TxtRef.Name = "TxtRef";
-            this.TxtRef.Size = new System.Drawing.Size(72, 20);
+            this.TxtRef.Size = new System.Drawing.Size(64, 20);
             this.TxtRef.TabIndex = 2;
             this.TxtRef.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2491,17 +2495,58 @@
             // 
             // DgvRegistro
             // 
-            this.DgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvRegistro.Location = new System.Drawing.Point(12, 345);
+            this.DgvRegistro.AllowUserToAddRows = false;
+            this.DgvRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DgvRegistro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DgvRegistro.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DgvRegistro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            this.DgvRegistro.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DgvRegistro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvRegistro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvRegistro.ColumnHeadersHeight = 30;
+            this.DgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvRegistro.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvRegistro.EnableHeadersVisualStyles = false;
+            this.DgvRegistro.GridColor = System.Drawing.Color.SteelBlue;
+            this.DgvRegistro.Location = new System.Drawing.Point(12, 319);
             this.DgvRegistro.Name = "DgvRegistro";
-            this.DgvRegistro.Size = new System.Drawing.Size(897, 247);
+            this.DgvRegistro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvRegistro.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvRegistro.RowHeadersVisible = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.DgvRegistro.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DgvRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvRegistro.Size = new System.Drawing.Size(897, 273);
             this.DgvRegistro.TabIndex = 14;
             // 
             // FormLlamada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(15)))), ((int)(((byte)(29)))));
             this.ClientSize = new System.Drawing.Size(921, 620);
             this.Controls.Add(this.DgvRegistro);
             this.Controls.Add(this.BtnRegistrar);

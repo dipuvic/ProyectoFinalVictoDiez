@@ -28,6 +28,17 @@ namespace DataAccess
             conexion.CerrarConexion();
             return tabla;
         }
+
+        public DataTable MostrarRegistroLlamadas()
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT cargo.cargo as PasaLlamada, concat_ws(' ', usuario.nombre, usuario.apellido) as Atiende, cliente.nombre AS Cliente, producto.referencia AS Referencia, producto.descripcion As Descripción, llamadas.problema AS Problema, llamadas.observacion AS Observación FROM llamadas INNER JOIN cargo ON llamadas.idcargo = cargo.idcargo INNER JOIN usuario ON llamadas.idusuario = usuario.id_user INNER JOIN cliente ON llamadas.idcliente = cliente.id_cliente INNER JOIN llamadas_productos ON llamadas.idllamada = llamadas_productos.idllamada INNER JOIN producto ON llamadas_productos.referencia = producto.referencia; ; ";
+            leerFilas = comando.ExecuteReader();
+            tabla.Load(leerFilas);
+            conexion.CerrarConexion();
+
+            return tabla;
+        }
     }
 }
                               

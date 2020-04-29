@@ -20,10 +20,22 @@ namespace Domain
 
             return tabla;
         }
-        public void InsertarProducto(string descripcion, string precio)
+
+        public DataTable ListarCategorias()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoDA.ListarCategorias();
+
+            return tabla;
+        }
+
+        public void InsertarProducto(string idcat, string descripcion, string precio)
         {
             //DA_Productos objetoDA = new DA_Productos();
-            objetoDA.InsertarProducto(descripcion, precio);
+            string indice = idcat;
+            int sumaindice = Convert.ToInt32(indice) + 1;
+
+            objetoDA.InsertarProducto(sumaindice, descripcion, precio);
         }
         public void EditarProducto(string referencia, string descripcion, string precio)
         {

@@ -20,8 +20,14 @@ namespace Presentation
 
         private void FormUsuario_Load(object sender, EventArgs e)
         {
+            MostrarDatosUser();
+        }
+
+        private void MostrarDatosUser()
+        {
             LblNombreApellido.Text = UserLoginCache.Nombre + " " + UserLoginCache.Apellido;
             LblCargo.Text = UserLoginCache.Cargo;
+            LblTelefono.Text = UserLoginCache.Telefono;
             LblEmail.Text = UserLoginCache.Email;
         }
 

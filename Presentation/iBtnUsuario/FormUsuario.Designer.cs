@@ -37,15 +37,19 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.iBtnCargo = new FontAwesome.Sharp.IconPictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.iBtnEmail = new FontAwesome.Sharp.IconPictureBox();
+            this.iBtnTelefono = new FontAwesome.Sharp.IconPictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.iBtnEmail = new FontAwesome.Sharp.IconPictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.LblNombreApellido = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LblCargo = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.LblEmail = new System.Windows.Forms.Label();
+            this.LblTelefono = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.iBtnLogout = new FontAwesome.Sharp.IconButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.FlpUsuario.SuspendLayout();
@@ -54,6 +58,7 @@
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnNombreApellido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnCargo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iBtnTelefono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnEmail)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +72,7 @@
             this.FlpUsuario.Controls.Add(this.flowLayoutPanel1);
             this.FlpUsuario.Location = new System.Drawing.Point(161, 89);
             this.FlpUsuario.Name = "FlpUsuario";
-            this.FlpUsuario.Size = new System.Drawing.Size(606, 336);
+            this.FlpUsuario.Size = new System.Drawing.Size(606, 364);
             this.FlpUsuario.TabIndex = 0;
             // 
             // iPbxUsuario
@@ -93,7 +98,7 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 158);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(210, 148);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(210, 206);
             this.flowLayoutPanel2.TabIndex = 9;
             // 
             // flowLayoutPanel3
@@ -102,13 +107,15 @@
             this.flowLayoutPanel3.Controls.Add(this.panel4);
             this.flowLayoutPanel3.Controls.Add(this.iBtnCargo);
             this.flowLayoutPanel3.Controls.Add(this.panel5);
-            this.flowLayoutPanel3.Controls.Add(this.iBtnEmail);
+            this.flowLayoutPanel3.Controls.Add(this.iBtnTelefono);
             this.flowLayoutPanel3.Controls.Add(this.panel6);
+            this.flowLayoutPanel3.Controls.Add(this.iBtnEmail);
+            this.flowLayoutPanel3.Controls.Add(this.panel8);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(175, 0);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(35, 114);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(35, 180);
             this.flowLayoutPanel3.TabIndex = 1;
             // 
             // iBtnNombreApellido
@@ -157,18 +164,18 @@
             this.panel5.Size = new System.Drawing.Size(30, 1);
             this.panel5.TabIndex = 10;
             // 
-            // iBtnEmail
+            // iBtnTelefono
             // 
-            this.iBtnEmail.BackColor = System.Drawing.Color.Transparent;
-            this.iBtnEmail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.iBtnEmail.IconColor = System.Drawing.Color.White;
-            this.iBtnEmail.IconSize = 27;
-            this.iBtnEmail.Location = new System.Drawing.Point(5, 71);
-            this.iBtnEmail.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.iBtnEmail.Name = "iBtnEmail";
-            this.iBtnEmail.Size = new System.Drawing.Size(30, 27);
-            this.iBtnEmail.TabIndex = 11;
-            this.iBtnEmail.TabStop = false;
+            this.iBtnTelefono.BackColor = System.Drawing.Color.Transparent;
+            this.iBtnTelefono.IconChar = FontAwesome.Sharp.IconChar.Phone;
+            this.iBtnTelefono.IconColor = System.Drawing.Color.White;
+            this.iBtnTelefono.IconSize = 27;
+            this.iBtnTelefono.Location = new System.Drawing.Point(5, 71);
+            this.iBtnTelefono.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.iBtnTelefono.Name = "iBtnTelefono";
+            this.iBtnTelefono.Size = new System.Drawing.Size(30, 27);
+            this.iBtnTelefono.TabIndex = 11;
+            this.iBtnTelefono.TabStop = false;
             // 
             // panel6
             // 
@@ -180,20 +187,45 @@
             this.panel6.Size = new System.Drawing.Size(30, 1);
             this.panel6.TabIndex = 11;
             // 
+            // iBtnEmail
+            // 
+            this.iBtnEmail.BackColor = System.Drawing.Color.Transparent;
+            this.iBtnEmail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.iBtnEmail.IconColor = System.Drawing.Color.White;
+            this.iBtnEmail.IconSize = 27;
+            this.iBtnEmail.Location = new System.Drawing.Point(5, 105);
+            this.iBtnEmail.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.iBtnEmail.Name = "iBtnEmail";
+            this.iBtnEmail.Size = new System.Drawing.Size(30, 27);
+            this.iBtnEmail.TabIndex = 12;
+            this.iBtnEmail.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel8.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel8.Location = new System.Drawing.Point(5, 132);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(30, 1);
+            this.panel8.TabIndex = 13;
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.LblNombreApellido);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.LblCargo);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.LblEmail);
+            this.flowLayoutPanel1.Controls.Add(this.LblTelefono);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Controls.Add(this.LblEmail);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
             this.flowLayoutPanel1.Controls.Add(this.iBtnLogout);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(213, 158);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(285, 178);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(285, 206);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // LblNombreApellido
@@ -242,18 +274,18 @@
             this.panel2.Size = new System.Drawing.Size(270, 1);
             this.panel2.TabIndex = 8;
             // 
-            // LblEmail
+            // LblTelefono
             // 
-            this.LblEmail.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.ForeColor = System.Drawing.Color.Transparent;
-            this.LblEmail.Location = new System.Drawing.Point(0, 68);
-            this.LblEmail.Margin = new System.Windows.Forms.Padding(0);
-            this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.LblEmail.Size = new System.Drawing.Size(284, 30);
-            this.LblEmail.TabIndex = 6;
-            this.LblEmail.Text = "Email";
-            this.LblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblTelefono.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTelefono.ForeColor = System.Drawing.Color.Transparent;
+            this.LblTelefono.Location = new System.Drawing.Point(0, 68);
+            this.LblTelefono.Margin = new System.Windows.Forms.Padding(0);
+            this.LblTelefono.Name = "LblTelefono";
+            this.LblTelefono.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.LblTelefono.Size = new System.Drawing.Size(284, 30);
+            this.LblTelefono.TabIndex = 6;
+            this.LblTelefono.Text = "Teléfono";
+            this.LblTelefono.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
             // 
@@ -265,8 +297,32 @@
             this.panel3.Size = new System.Drawing.Size(270, 1);
             this.panel3.TabIndex = 8;
             // 
+            // LblEmail
+            // 
+            this.LblEmail.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.ForeColor = System.Drawing.Color.Transparent;
+            this.LblEmail.Location = new System.Drawing.Point(0, 102);
+            this.LblEmail.Margin = new System.Windows.Forms.Padding(0);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.LblEmail.Size = new System.Drawing.Size(284, 30);
+            this.LblEmail.TabIndex = 10;
+            this.LblEmail.Text = "Email";
+            this.LblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel9.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel9.Location = new System.Drawing.Point(0, 132);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0, 0, 3, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(270, 1);
+            this.panel9.TabIndex = 11;
+            // 
             // iBtnLogout
             // 
+            this.iBtnLogout.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.iBtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iBtnLogout.FlatAppearance.BorderSize = 0;
             this.iBtnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumBlue;
@@ -278,7 +334,7 @@
             this.iBtnLogout.IconColor = System.Drawing.Color.White;
             this.iBtnLogout.IconSize = 25;
             this.iBtnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iBtnLogout.Location = new System.Drawing.Point(0, 117);
+            this.iBtnLogout.Location = new System.Drawing.Point(0, 151);
             this.iBtnLogout.Margin = new System.Windows.Forms.Padding(0, 15, 3, 3);
             this.iBtnLogout.Name = "iBtnLogout";
             this.iBtnLogout.Rotation = 0D;
@@ -292,7 +348,7 @@
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel7.Location = new System.Drawing.Point(0, 145);
+            this.panel7.Location = new System.Drawing.Point(0, 179);
             this.panel7.Margin = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(184, 1);
@@ -317,6 +373,7 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iBtnNombreApellido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnCargo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iBtnTelefono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBtnEmail)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -329,7 +386,7 @@
         private FontAwesome.Sharp.IconPictureBox iPbxUsuario;
         private System.Windows.Forms.Label LblNombreApellido;
         private System.Windows.Forms.Label LblCargo;
-        private System.Windows.Forms.Label LblEmail;
+        private System.Windows.Forms.Label LblTelefono;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -339,10 +396,14 @@
         private System.Windows.Forms.Panel panel4;
         private FontAwesome.Sharp.IconPictureBox iBtnCargo;
         private System.Windows.Forms.Panel panel5;
-        private FontAwesome.Sharp.IconPictureBox iBtnEmail;
+        private FontAwesome.Sharp.IconPictureBox iBtnTelefono;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private FontAwesome.Sharp.IconButton iBtnLogout;
         private System.Windows.Forms.Panel panel7;
+        private FontAwesome.Sharp.IconPictureBox iBtnEmail;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label LblEmail;
+        private System.Windows.Forms.Panel panel9;
     }
 }

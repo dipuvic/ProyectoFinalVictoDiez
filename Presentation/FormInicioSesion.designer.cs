@@ -92,7 +92,7 @@
             this.TxtPassword.TabIndex = 2;
             this.TxtPassword.Text = "Contraseña";
             this.TxtPassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TxtPassword_MouseClick);
-            this.TxtPassword.Leave += new System.EventHandler(this.TxtPassword_Leave);
+            this.TxtPassword.Enter += new System.EventHandler(this.TxtPassword_Enter);
             // 
             // iBtnPassword
             // 
@@ -210,7 +210,7 @@
             this.TxtUsuario.TabIndex = 1;
             this.TxtUsuario.Text = "Usuario";
             this.TxtUsuario.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TxtUsuario_MouseClick);
-            this.TxtUsuario.Leave += new System.EventHandler(this.TxtUsuario_Leave);
+            this.TxtUsuario.Enter += new System.EventHandler(this.TxtUsuario_Enter);
             // 
             // FormInicioSesion
             // 

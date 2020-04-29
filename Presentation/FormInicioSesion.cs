@@ -48,27 +48,15 @@ namespace Presentation
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void TxtUsuario_Leave(object sender, EventArgs e)
-        {
-            if (TxtUsuario.Text == "")
-            {
-                TxtUsuario.Text = "Usuario";
-                TxtUsuario.ForeColor = Color.DimGray;
-            }
-
-        }
-
-        private void TxtPassword_Leave(object sender, EventArgs e)
-        {
-            if (TxtPassword.Text == "")
-            {
-                TxtPassword.Text = "Contraseña";
-                TxtPassword.ForeColor = Color.DimGray;
-                TxtPassword.UseSystemPasswordChar = true;
-            }
-        }
-
         private void TxtUsuario_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (TxtUsuario.Text == "Usuario")
+            {
+                TxtUsuario.Text = "";
+                TxtUsuario.ForeColor = Color.LightGray;
+            }
+        }
+        private void TxtUsuario_Enter(object sender, EventArgs e)
         {
             if (TxtUsuario.Text == "Usuario")
             {
@@ -83,7 +71,18 @@ namespace Presentation
             {
                 TxtPassword.Text = "";
                 TxtPassword.ForeColor = Color.LightGray;
-                TxtPassword.UseSystemPasswordChar = true;
+                TxtPassword.PasswordChar = '*';
+                TxtPassword.UseSystemPasswordChar = false;
+            }
+        }
+        private void TxtPassword_Enter(object sender, EventArgs e)
+        {
+            if (TxtPassword.Text == "Contraseña")
+            {
+                TxtPassword.Text = "";
+                TxtPassword.ForeColor = Color.LightGray;
+                TxtPassword.PasswordChar = '*';
+                TxtPassword.UseSystemPasswordChar = false;
             }
         }
 
@@ -124,10 +123,13 @@ namespace Presentation
         private void Logout(object sender, FormClosedEventArgs e)
         {
             TxtPassword.Text = "Contraseña";
-            TxtPassword.UseSystemPasswordChar = false;
+            TxtPassword.UseSystemPasswordChar = true;
+            TxtPassword.PasswordChar = ' ';
             TxtUsuario.Text = "Usuario";
             LblAlert.Visible = false;
             this.Show();
         }
+
+
     }
 }

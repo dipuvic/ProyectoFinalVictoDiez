@@ -32,7 +32,8 @@ namespace DataAccess
         public DataTable MostrarProductos()
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto INNER JOIN categoria ON producto.idcat = categoria.idcat; ";
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto INNER JOIN categoria ON producto.idcat = categoria.idcat ORDER BY referencia; ";
+            
             leerprod = comando.ExecuteReader();
             tabla.Load(leerprod);
             conexion.CerrarConexion();
@@ -66,15 +67,19 @@ namespace DataAccess
             comando.ExecuteNonQuery();
             conexion.CerrarConexion();
         }
-        public void BuscarProducto(int referencia, string descripcion)
+
+    public DataTable BuscarProducto(int referencia)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT * FROM producto WHERE referencia='%"+ referencia + "%' OR '%'" + descripcion + "'%';";
-            comando.CommandType = CommandType.Text;
-            comando.ExecuteNonQuery();
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE(producto.referencia LIKE CONCAT('%', @Referencia, '%')) ORDER BY referencia;" ;
+            
+            comando.Parameters.AddWithValue("@Referencia", referencia);
+
+            leerprod = comando.ExecuteReader();
+            tabla.Load(leerprod);
             conexion.CerrarConexion();
+
+            return tabla;
         }
-
-
     }
 }

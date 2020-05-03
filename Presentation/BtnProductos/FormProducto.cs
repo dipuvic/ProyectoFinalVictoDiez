@@ -35,16 +35,20 @@ namespace Presentation
             CmbCategoria.DataSource = objD.ListarCategorias();
             CmbCategoria.DisplayMember = "catpadre";
             CmbCategoria.ValueMember = "idcat";
-            CmbBCategoria.DataSource = objD.ListarCategorias();
-            CmbBCategoria.DisplayMember = "catpadre";
-            CmbBCategoria.ValueMember = "idcat";
+
         }
 
         private void MostrarProductos()
         {
-            D_Productos objetoD = new D_Productos();
-            DgvProducto.DataSource = objetoD.MostrarProductos();
+            D_Productos objetoDMostrar = new D_Productos();
+            DgvProducto.DataSource = objetoDMostrar.MostrarProductos();
         }
+        private void BuscarProducto(string referencia)
+        {
+            D_Productos objetoDBuscar = new D_Productos();
+            DgvProducto.DataSource = objetoDBuscar.BuscarProducto(referencia);
+        }
+
         private void LimpiarFormulario()
         {
             TxtReferencia.Clear();
@@ -65,7 +69,7 @@ namespace Presentation
                     
                     objetoD.InsertarProducto(CmbCategoria.SelectedIndex.ToString(), TxtDescripcion.Text, TxtPrecio.Text);
                     MessageBox.Show("Se ha AÑADIDO un nuevo producto.");
-                    LimpiarFormulario();
+                    LimpiarFormulario(); 
                     MostrarProductos();
                 }
                 catch (Exception ex)
@@ -115,12 +119,34 @@ namespace Presentation
                 TxtReferencia.Text = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
                 TxtDescripcion.Text = DgvProducto.CurrentRow.Cells["Descripción"].Value.ToString();
                 TxtPrecio.Text = DgvProducto.CurrentRow.Cells["Precio"].Value.ToString();
+                CmbCategoria.Text = DgvProducto.CurrentRow.Cells["Categoria"].Value.ToString();
                 idreferencia = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
             }
             else
             {
                 MessageBox.Show("Seleccione una fila de la tabla");
             }
+        }
+
+        private void iBtnBuscar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(TxtBReferencia.Text);
+            if (TxtBReferencia.Text == String.Empty)
+            {
+                MostrarProductos();
+                MessageBox.Show("No se ha introducido ninguna referencia");
+            }
+            else
+            {
+                MessageBox.Show("Buscar:", TxtBReferencia.Text);
+                BuscarProducto(TxtBReferencia.Text);
+            }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MostrarProductos();
         }
     }
 }

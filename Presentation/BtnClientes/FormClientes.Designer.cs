@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DgvClientes = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LblTituloMostrar = new System.Windows.Forms.Label();
             this.LblInsertarClientes = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -54,25 +57,12 @@
             this.BtnIngresar = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).BeginInit();
+            this.DgvClientes = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // DgvClientes
-            // 
-            this.DgvClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DgvClientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DgvClientes.BackgroundColor = System.Drawing.Color.Navy;
-            this.DgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvClientes.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DgvClientes.Location = new System.Drawing.Point(24, 367);
-            this.DgvClientes.Name = "DgvClientes";
-            this.DgvClientes.Size = new System.Drawing.Size(790, 280);
-            this.DgvClientes.TabIndex = 0;
             // 
             // LblTituloMostrar
             // 
@@ -4793,6 +4783,7 @@
             this.BtnEditar.TabIndex = 11;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // BtnEliminar
             // 
@@ -4808,34 +4799,81 @@
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
             // 
+            // DgvClientes
+            // 
+            this.DgvClientes.AllowUserToAddRows = false;
+            this.DgvClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DgvClientes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DgvClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            this.DgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DgvClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.DgvClientes.ColumnHeadersHeight = 30;
+            this.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvClientes.DefaultCellStyle = dataGridViewCellStyle6;
+            this.DgvClientes.EnableHeadersVisualStyles = false;
+            this.DgvClientes.GridColor = System.Drawing.Color.SteelBlue;
+            this.DgvClientes.Location = new System.Drawing.Point(15, 367);
+            this.DgvClientes.Name = "DgvClientes";
+            this.DgvClientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.DgvClientes.RowHeadersVisible = false;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.DgvClientes.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.DgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvClientes.Size = new System.Drawing.Size(785, 280);
+            this.DgvClientes.TabIndex = 21;
+            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(937, 659);
+            this.Controls.Add(this.DgvClientes);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.LblTituloMostrar);
-            this.Controls.Add(this.DgvClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormClientes";
             this.Text = "FormClientes";
             this.Load += new System.EventHandler(this.FormClientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView DgvClientes;
         private System.Windows.Forms.Label LblTituloMostrar;
         private System.Windows.Forms.Label LblInsertarClientes;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -4861,5 +4899,6 @@
         private System.Windows.Forms.ComboBox CbxProvincia;
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.DataGridView DgvClientes;
     }
 }

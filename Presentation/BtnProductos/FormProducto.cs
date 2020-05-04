@@ -27,6 +27,8 @@ namespace Presentation
         {
             MostrarProductos();
             ListarCategorias();
+            CmbCategoria.Text = String.Empty;
+            CmbBCategoria.Text = String.Empty;
         }
 
         private void ListarCategorias()
@@ -36,6 +38,10 @@ namespace Presentation
             CmbCategoria.DisplayMember = "catpadre";
             CmbCategoria.ValueMember = "idcat";
 
+            CmbBCategoria.DataSource = objD.ListarCategorias();
+            CmbBCategoria.DisplayMember = "catpadre";
+            CmbBCategoria.ValueMember = "idcat";
+
         }
 
         private void MostrarProductos()
@@ -43,10 +49,22 @@ namespace Presentation
             D_Productos objetoDMostrar = new D_Productos();
             DgvProducto.DataSource = objetoDMostrar.MostrarProductos();
         }
-        private void BuscarProducto(string referencia)
+        private void BuscarProductoRef(string referencia)
         {
             D_Productos objetoDBuscar = new D_Productos();
-            DgvProducto.DataSource = objetoDBuscar.BuscarProducto(referencia);
+            DgvProducto.DataSource = objetoDBuscar.BuscarProductoRef(referencia);
+        }
+
+        private void BuscarProductoCat(string categoria)
+        {
+            D_Productos objetoDBuscar = new D_Productos();
+            DgvProducto.DataSource = objetoDBuscar.BuscarProductoCat(categoria);
+        }
+
+        private void BuscarProductoDesc(string descripcion)
+        {
+            D_Productos objetoDBuscar = new D_Productos();
+            DgvProducto.DataSource = objetoDBuscar.BuscarProductoDesc(descripcion);
         }
 
         private void LimpiarFormulario()
@@ -99,7 +117,7 @@ namespace Presentation
 
         }
 
-        private void BtnEliminar_Click_1(object sender, EventArgs e)
+        private void BtnEliminar_Click(object sender, EventArgs e)
         {
             if (DgvProducto.SelectedRows.Count > 0)
             {
@@ -107,13 +125,19 @@ namespace Presentation
                 objetoD.EliminarProducto(idreferencia);
                 MostrarProductos();
             }
+            else
+            {
+                MessageBox.Show("Seleccione una fila de la tabla");
+            }
         }
 
-        private void BtnEditar_Click_1(object sender, EventArgs e)
+        private void BtnEditar_Click(object sender, EventArgs e)
         {
             if (DgvProducto.SelectedRows.Count > 0)
             {
                 editar = true;
+                LblReferencia.Visible = true;
+                TxtReferencia.Visible = true;
                 BtnIngresar.Text = "Guardar";
                 LblEdicionProducto.Text = "Editar producto seleccionado";
                 TxtReferencia.Text = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
@@ -128,25 +152,67 @@ namespace Presentation
             }
         }
 
-        private void iBtnBuscar_Click(object sender, EventArgs e)
+        private void TxtBReferencia_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(TxtBReferencia.Text);
             if (TxtBReferencia.Text == String.Empty)
             {
                 MostrarProductos();
-                MessageBox.Show("No se ha introducido ninguna referencia");
             }
             else
             {
-                MessageBox.Show("Buscar:", TxtBReferencia.Text);
-                BuscarProducto(TxtBReferencia.Text);
+                BuscarProductoRef(TxtBReferencia.Text);
             }
-            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void TxtBDescripcion_TextChanged(object sender, EventArgs e)
+        {
+            if (TxtBDescripcion.Text == String.Empty)
+            {
+                MostrarProductos();
+            }
+            else
+            {
+                BuscarProductoDesc(TxtBDescripcion.Text);
+            }
+        }
+
+        private void CmbBCategoria_TextChanged(object sender, EventArgs e)
+        {
+            if (CmbBCategoria.Text == String.Empty)
+            {
+                MostrarProductos();
+            }
+            else
+            {
+                BuscarProductoCat(CmbBCategoria.Text);
+            }
+        }
+
+
+        private void TxtBReferencia_Click(object sender, EventArgs e)
+        {
+            CmbBCategoria.Text = String.Empty;
+            TxtBDescripcion.Text = String.Empty;
+        }
+
+        private void TxtBDescripcion_Click(object sender, EventArgs e)
+        {
+            TxtBReferencia.Text = String.Empty;
+            CmbBCategoria.Text = String.Empty;
+        }
+
+        private void CmbBCategoria_Click(object sender, EventArgs e)
+        {
+            TxtBReferencia.Text = String.Empty;
+            TxtBDescripcion.Text = String.Empty;
+        }
+
+        private void iBtnBuscar_Click(object sender, EventArgs e)
         {
             MostrarProductos();
+            TxtBReferencia.Text = String.Empty;
+            TxtBDescripcion.Text = String.Empty;
+            CmbBCategoria.Text = String.Empty;
         }
     }
 }

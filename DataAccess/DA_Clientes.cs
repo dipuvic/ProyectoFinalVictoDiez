@@ -19,7 +19,7 @@ namespace DataAccess
 
         public DataTable MostrarClientes(){
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT nombre,nif,calle,municipio,provincia,codpostal,telf,email FROM cliente;";
+            comando.CommandText = "SELECT id_cliente,nombre,nif,calle,municipio,provincia,codpostal,telf,email FROM cliente;";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.CerrarConexion();
@@ -35,10 +35,10 @@ namespace DataAccess
             conexion.CerrarConexion();
         }
 
-        public void EditarCliente(string nombre, string nif, string calle, string municipio, string provincia, string codpostal, int telf, string email)
+        public void EditarCliente(int idcliente, string nombre, string nif, string calle, string municipio, string provincia, string codpostal, int telf, string email)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText= "UPDATE cliente SET nombre='" + nombre + "', nif='" + nif + "', calle='"+calle+"', municipio='"+municipio+"',provincia='"+provincia+"',codpostal='"+codpostal+"',telf="+telf+",email='"+email+"';";
+            comando.CommandText= "UPDATE cliente SET nombre='" + nombre + "', nif='" + nif + "', calle='"+calle+"', municipio='"+municipio+"',provincia='"+provincia+"',codpostal='"+codpostal+"',telf="+telf+",email='"+email+"' WHERE id_cliente = "+idcliente+";";
             comando.CommandType = CommandType.Text;
             comando.ExecuteNonQuery();
             conexion.CerrarConexion();

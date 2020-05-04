@@ -26,9 +26,9 @@ namespace Domain
             objetoDA.InsertarClientes(nombre, nif, calle, municipio, provincia, codpostal, Convert.ToInt32(telf),email);
         }
         
-        public void EditarCliente(string nombre, string nif, string calle, string municipio, string provincia, string codpostal, string telf, string email)
+        public void EditarCliente(string idcliente, string nombre, string nif, string calle, string municipio, string provincia, string codpostal, string telf, string email)
         {
-            objetoDA.EditarCliente(nombre, nif, calle, municipio, provincia, codpostal, Convert.ToInt32(telf), email);
+            objetoDA.EditarCliente(Convert.ToInt32(idcliente), nombre, nif, calle, municipio, provincia, codpostal, Convert.ToInt32(telf), email);
         }
 
     }

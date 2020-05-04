@@ -68,7 +68,7 @@ namespace DataAccess
             conexion.CerrarConexion();
         }
 
-    public DataTable BuscarProducto(int referencia)
+        public DataTable BuscarProductoRef(int referencia)
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE(producto.referencia LIKE CONCAT('%', @Referencia, '%')) ORDER BY referencia;" ;
@@ -81,5 +81,32 @@ namespace DataAccess
 
             return tabla;
         }
+        public DataTable BuscarProductoCat(string categoria)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE(categoria.catpadre LIKE CONCAT('%', @Categoria, '%'));";
+
+            comando.Parameters.AddWithValue("@Categoria", categoria);
+
+            leerprod = comando.ExecuteReader();
+            tabla.Load(leerprod);
+            conexion.CerrarConexion();
+
+            return tabla;
+        }
+        public DataTable BuscarProductoDesc(string descripcion)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE(producto.descripcion LIKE CONCAT('%', @Descripcion, '%'));";
+
+            comando.Parameters.AddWithValue("@Descripcion", descripcion);
+
+            leerprod = comando.ExecuteReader();
+            tabla.Load(leerprod);
+            conexion.CerrarConexion();
+
+            return tabla;
+        }
     }
+
 }

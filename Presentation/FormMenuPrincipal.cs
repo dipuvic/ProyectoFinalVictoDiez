@@ -13,6 +13,7 @@ using Common.Cache;
 using Presentation.BtnClientes;
 using Presentation.BtnCalidad;
 using Presentation.BtnLlamadas;
+using Presentation.BtnProveedor;
 
 namespace Presentation
 {
@@ -158,7 +159,7 @@ namespace Presentation
 
         private void iBtnProveedor_Click(object sender, EventArgs e)
         {
-            //  AbrirFormulario<FormProveedor>();
+            AbrirFormulario<FormProveedor>();
             CleanMenu();
             iBtnProveedor.BackColor = Color.DimGray;
         }

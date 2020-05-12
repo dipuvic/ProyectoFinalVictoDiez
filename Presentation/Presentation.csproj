@@ -73,6 +73,12 @@
     <Compile Include="BtnLlamadas\FormLlamada.Designer.cs">
       <DependentUpon>FormLlamada.cs</DependentUpon>
     </Compile>
+    <Compile Include="BtnProveedor\FormProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BtnProveedor\FormProveedor.Designer.cs">
+      <DependentUpon>FormProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="iBtnUsuario\FormUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BtnLlamadas\FormLlamada.resx">
       <DependentUpon>FormLlamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnProveedor\FormProveedor.resx">
+      <DependentUpon>FormProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="iBtnUsuario\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
@@ -168,7 +177,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BtnAlmacen\" />
-    <Folder Include="BtnProveedor\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ELECTRO DH-blanco.png" />

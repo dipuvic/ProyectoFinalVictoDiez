@@ -24,16 +24,34 @@ namespace Presentation.BtnClientes
             InitializeComponent();
         }
 
+
+        // >>> LOAD Del Formulario Proveedores
         private void FormClientes_Load(object sender, EventArgs e)
         {
             MostrarClientes();
+            FormatoFormularioIngresar();
         }
 
-        private void MostrarClientes()
+
+        // >>> Formato mensaje emergente "Rellenar para BUSCAR"
+
+           
+            // <<<<< Pendiente de hacer >>>>>
+            
+
+
+        // >>> Formato formulario Clientes
+        private void FormatoFormularioIngresar()
         {
-            D_Clientes objetoD = new D_Clientes();
-            DgvClientes.DataSource = objetoD.MostrarClietes();
+            var margin = BtnIngresar.Margin;
+            margin.Left = 115;
+            BtnIngresar.Margin = margin;
+            BtnCancelar.Visible = false;
+            BtnIngresar.Text = "Ingresar";
+            LblTituloClientes.Text = "ALTA USUARIO";
+            LimpiarFormulario();
         }
+
         private void LimpiarFormulario()
         {
             TxtNombre.Clear();
@@ -46,6 +64,21 @@ namespace Presentation.BtnClientes
             TxtEmail.Clear();
         }
 
+
+        // >>> Funciones del formulario Clientes
+        private void MostrarClientes()
+        {
+            D_Clientes objetoD = new D_Clientes();
+            DgvClientes.DataSource = objetoD.MostrarClietes();
+        }
+
+        private void BuscarCliente(string nombre, string municipio, string provincia, string codpostal)
+        {
+            D_Clientes objetoDBuscar = new D_Clientes();
+            DgvClientes.DataSource = objetoDBuscar.BuscarCliente(nombre, municipio, provincia, codpostal);
+        }
+
+        // >>> Eventos del Formulario Clientes
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
             //INGRESAR NUEVO PRODUCTO en la tabla producto de nuestra Base de Datos.
@@ -54,7 +87,6 @@ namespace Presentation.BtnClientes
             {
                 try
                 {
-                    D_Productos objetoinsertar = new D_Productos();
 
                     objetoD.InsertarCliente(TxtNombre.Text, TxtNIF.Text, TxtCalle.Text, CbxMunicipio.Text, CbxProvincia.Text, TxtCodPostal.Text, TxtTelf.Text, TxtEmail.Text);
                     MessageBox.Show("Se ha AÑADIDO un nuevo cliente." + TxtNombre.Text);
@@ -63,7 +95,7 @@ namespace Presentation.BtnClientes
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se ha podido ingresar el producto por: " + ex);
+                    MessageBox.Show("No se ha podido ingresar el cliente por: " + ex);
                 }
             }
 
@@ -87,21 +119,31 @@ namespace Presentation.BtnClientes
             }
         }
 
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarFormulario();
+            FormatoFormularioIngresar();
+        }
+
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             if (DgvClientes.SelectedRows.Count > 0)
             {
                 editar = true;
+                var margin = BtnIngresar.Margin;
+                margin.Left = 40;
+                BtnIngresar.Margin = margin;
+                BtnCancelar.Visible = true;
                 BtnIngresar.Text = "Guardar";
-                LblTituloClientes.Text = "Editar cliente seleccionado";
-                selectedclient = DgvClientes.CurrentRow.Cells["id_cliente"].Value.ToString();
+                LblTituloClientes.Text = "EDITAR CLIENTE";
+                selectedclient = DgvClientes.CurrentRow.Cells["Código"].Value.ToString();
                 TxtNombre.Text = DgvClientes.CurrentRow.Cells["Nombre"].Value.ToString();
                 TxtNIF.Text = DgvClientes.CurrentRow.Cells["NIF"].Value.ToString();
                 TxtCalle.Text = DgvClientes.CurrentRow.Cells["Calle"].Value.ToString();
                 CbxMunicipio.Text = DgvClientes.CurrentRow.Cells["Municipio"].Value.ToString();
                 CbxProvincia.Text = DgvClientes.CurrentRow.Cells["Provincia"].Value.ToString();
-                TxtCodPostal.Text = DgvClientes.CurrentRow.Cells["CodPostal"].Value.ToString();
-                TxtTelf.Text = DgvClientes.CurrentRow.Cells["telf"].Value.ToString();
+                TxtCodPostal.Text = DgvClientes.CurrentRow.Cells["CP"].Value.ToString();
+                TxtTelf.Text = DgvClientes.CurrentRow.Cells["Teléfono"].Value.ToString();
                 TxtEmail.Text = DgvClientes.CurrentRow.Cells["Email"].Value.ToString();
             }
             else
@@ -109,5 +151,27 @@ namespace Presentation.BtnClientes
                 MessageBox.Show("Seleccione una fila de la tabla");
             }
         }
+
+        private void TxtBNombre_TextChanged(object sender, EventArgs e)
+        {
+            BuscarCliente(TxtBNombre.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCodPostal.Text);
+        }
+
+        private void CmbBMunicipio_TextChanged(object sender, EventArgs e)
+        {
+            BuscarCliente(TxtBNombre.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCodPostal.Text);
+        }
+
+        private void CmbBProvincia_TextChanged(object sender, EventArgs e)
+        {
+            BuscarCliente(TxtBNombre.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCodPostal.Text);
+        }
+
+        private void TxtBCodPostal_TextChanged(object sender, EventArgs e)
+        {
+            BuscarCliente(TxtBNombre.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCodPostal.Text);
+        }
+
+
     }
 }

@@ -13,18 +13,19 @@ namespace Domain
     {
         private DA_Productos objetoDA = new DA_Productos();
 
-        public DataTable MostrarProductos()
-        {
-            DataTable tabla = new DataTable();
-            tabla = objetoDA.MostrarProductos();
-
-            return tabla;
-        }
 
         public DataTable ListarCategorias()
         {
             DataTable tabla = new DataTable();
             tabla = objetoDA.ListarCategorias();
+
+            return tabla;
+        }
+
+        public DataTable MostrarProductos()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objetoDA.MostrarProductos();
 
             return tabla;
         }

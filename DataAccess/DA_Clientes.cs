@@ -19,7 +19,7 @@ namespace DataAccess
 
         public DataTable MostrarClientes(){
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT id_cliente,nombre,nif,calle,municipio,provincia,codpostal,telf,email FROM cliente;";
+            comando.CommandText = "SELECT id_cliente AS Código ,nombre AS Nombre,nif AS NIF,calle AS Calle,municipio AS Municipio,provincia AS Provincia,codpostal AS CP,telf AS Teléfono,email AS Email FROM cliente;";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.CerrarConexion();
@@ -43,7 +43,23 @@ namespace DataAccess
             comando.ExecuteNonQuery();
             conexion.CerrarConexion();
         }
-        
+
+        public DataTable BuscarCliente(string nombre, string municipio, string provincia, string codpostal)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT id_cliente AS Código ,nombre AS Nombre,nif AS NIF,calle AS Calle,municipio AS Municipio,provincia AS Provincia,codpostal AS CP, telf AS Teléfono,email AS Email FROM cliente WHERE (cliente.nombre LIKE CONCAT('%', @Nombre, '%')) AND (cliente.municipio LIKE CONCAT('%', @Municipio, '%')) AND (cliente.provincia LIKE CONCAT('%', @Provincia, '%')) AND (cliente.codpostal LIKE CONCAT('%', @CP, '%'));";
+            comando.Parameters.AddWithValue("@Nombre", nombre);
+            comando.Parameters.AddWithValue("@Municipio", municipio);
+            comando.Parameters.AddWithValue("@Provincia", provincia);
+            comando.Parameters.AddWithValue("@Cp", codpostal);
+
+            leer = comando.ExecuteReader();
+            tabla.Load(leer);
+            conexion.CerrarConexion();
+
+            return tabla;
+        }
+
 
     }
 }

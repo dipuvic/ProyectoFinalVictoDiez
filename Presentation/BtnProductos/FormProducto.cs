@@ -70,8 +70,12 @@ namespace Presentation
         private void LimpiarFormulario()
         {
             TxtReferencia.Clear();
-            TxtDescripcion.Clear();
+            LblReferencia.Visible = false;
+            TxtReferencia.Visible = false;
+            BtnCancelar.Visible = false;
+            TxtDescripcion.Clear(); 
             TxtPrecio.Clear();
+            CmbCategoria.Text = String.Empty;
         }
 
         private void BtnIngresar_Click(object sender, EventArgs e)
@@ -117,6 +121,36 @@ namespace Presentation
 
         }
 
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            editar = false;
+            LimpiarFormulario();
+            BtnIngresar.Text = "Añadir";
+            LblEdicionProducto.Text = "Añadir nuevo producto";
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            if (DgvProducto.SelectedRows.Count > 0)
+            {
+                editar = true;
+                LblReferencia.Visible = true;
+                TxtReferencia.Visible = true;
+                BtnCancelar.Visible = true;
+                BtnIngresar.Text = "Guardar";
+                LblEdicionProducto.Text = "EDITAR PRODUCTO";
+                TxtReferencia.Text = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
+                TxtDescripcion.Text = DgvProducto.CurrentRow.Cells["Descripción"].Value.ToString();
+                TxtPrecio.Text = DgvProducto.CurrentRow.Cells["Precio"].Value.ToString();
+                CmbCategoria.Text = DgvProducto.CurrentRow.Cells["Categoria"].Value.ToString();
+                idreferencia = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila de la tabla");
+            }
+        }
+
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             if (DgvProducto.SelectedRows.Count > 0)
@@ -131,26 +165,6 @@ namespace Presentation
             }
         }
 
-        private void BtnEditar_Click(object sender, EventArgs e)
-        {
-            if (DgvProducto.SelectedRows.Count > 0)
-            {
-                editar = true;
-                LblReferencia.Visible = true;
-                TxtReferencia.Visible = true;
-                BtnIngresar.Text = "Guardar";
-                LblEdicionProducto.Text = "Editar producto seleccionado";
-                TxtReferencia.Text = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
-                TxtDescripcion.Text = DgvProducto.CurrentRow.Cells["Descripción"].Value.ToString();
-                TxtPrecio.Text = DgvProducto.CurrentRow.Cells["Precio"].Value.ToString();
-                CmbCategoria.Text = DgvProducto.CurrentRow.Cells["Categoria"].Value.ToString();
-                idreferencia = DgvProducto.CurrentRow.Cells["Referencia"].Value.ToString();
-            }
-            else
-            {
-                MessageBox.Show("Seleccione una fila de la tabla");
-            }
-        }
 
         private void TxtBReferencia_TextChanged(object sender, EventArgs e)
         {
@@ -214,5 +228,7 @@ namespace Presentation
             TxtBDescripcion.Text = String.Empty;
             CmbBCategoria.Text = String.Empty;
         }
+
+
     }
 }

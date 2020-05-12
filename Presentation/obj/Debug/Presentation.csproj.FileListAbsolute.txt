@@ -55,3 +55,4 @@ C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Pr
 C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.FormProducto.resources
 C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.BtnCalidad.FormCalidad.resources
 C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.BtnLlamadas.FormLlamada.resources
+C:\Users\vdiez\Documents\GitHub\ProyectoFinalVictoDiez\Presentation\obj\Debug\Presentation.BtnProveedor.FormProveedor.resources

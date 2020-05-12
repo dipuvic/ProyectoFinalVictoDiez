@@ -31,6 +31,10 @@ namespace Domain
             objetoDA.EditarCliente(Convert.ToInt32(idcliente), nombre, nif, calle, municipio, provincia, codpostal, Convert.ToInt32(telf), email);
         }
 
+        public void EliminarCliente(string idcliente)
+        {
+            objetoDA.EliminarCliente(Convert.ToInt32(idcliente));
+        }
 
         public DataTable BuscarCliente(string nombre, string municipio, string provincia, string codpostal)
         {

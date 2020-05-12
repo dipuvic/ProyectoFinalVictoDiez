@@ -99,7 +99,7 @@ namespace Presentation.BtnClientes
                 }
             }
 
-            //EDITAR PRODUCTO SELECCIONADO EN DataGridView DgvProductos.
+            //EDITAR cliente seleccionado en DataGridView DgvCliente.
             if (editar == true)
             {
                 try
@@ -109,8 +109,8 @@ namespace Presentation.BtnClientes
                     MessageBox.Show("Se ha EDITADO el producto seleccionado.");
                     LimpiarFormulario();
                     editar = false;
-                    BtnIngresar.Text = "Añadir";
-                    LblTituloClientes.Text = "Añadir nuevo producto";
+                    BtnIngresar.Text = "Ingresar";
+                    LblTituloClientes.Text = "ALTA CLIENTE";
                 }
                 catch (Exception ex)
                 {
@@ -172,6 +172,19 @@ namespace Presentation.BtnClientes
             BuscarCliente(TxtBNombre.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCodPostal.Text);
         }
 
-
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            if (DgvClientes.SelectedRows.Count > 0)
+            {
+                selectedclient = DgvClientes.CurrentRow.Cells["Código"].Value.ToString();
+                MessageBox.Show(selectedclient);
+                objetoD.EliminarCliente(selectedclient);
+                MostrarClientes();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila de la tabla");
+            }
+        }
     }
 }

@@ -44,6 +44,15 @@ namespace DataAccess
             conexion.CerrarConexion();
         }
 
+        public void EliminarCliente(int idcliente)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "DELETE FROM cliente WHERE id_cliente=" + idcliente + ";";
+            comando.CommandType = CommandType.Text;
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+        }
+
         public DataTable BuscarCliente(string nombre, string municipio, string provincia, string codpostal)
         {
             comando.Connection = conexion.AbrirConexion();

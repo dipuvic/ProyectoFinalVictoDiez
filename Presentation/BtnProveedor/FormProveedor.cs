@@ -72,6 +72,12 @@ namespace Presentation.BtnProveedor
             LimpiarFormulario();
         }
 
+        private void BuscarProveedor(string nombre, string nif, string email, string municipio, string provincia, string cp)
+        {
+            D_Proveedor objetoDBuscar = new D_Proveedor();
+            DgvProveedor.DataSource = objetoDBuscar.BuscarProveedor(nombre, nif, email, municipio, provincia, cp);
+        }
+
 
         // >>>  Eventos del Formulario Proveedores
 
@@ -164,32 +170,32 @@ namespace Presentation.BtnProveedor
 
         private void TxtBNombre_TextChanged(object sender, EventArgs e)
         {
-            objetoD.BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
+            BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
         }
 
         private void TxtBNIF_TextChanged(object sender, EventArgs e)
         {
-            objetoD.BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
+            BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
         }
 
         private void TxtBEmail_TextChanged(object sender, EventArgs e)
         {
-            objetoD.BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
+            BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
         }
 
         private void CmbBMunicipio_TextChanged(object sender, EventArgs e)
         {
-            objetoD.BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
+            BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
         }
 
         private void CmbBProvincia_TextChanged(object sender, EventArgs e)
         {
-            objetoD.BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
+            BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
         }
 
         private void TxtBCP_TextChanged(object sender, EventArgs e)
         {
-            objetoD.BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
+            BuscarProveedor(TxtBNombre.Text, TxtBNIF.Text, TxtBEmail.Text, CmbBMunicipio.Text, CmbBProvincia.Text, TxtBCP.Text);
         }
     }
 }

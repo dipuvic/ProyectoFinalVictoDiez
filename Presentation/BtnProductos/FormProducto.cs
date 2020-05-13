@@ -17,6 +17,7 @@ namespace Presentation
         D_Productos objetoD = new D_Productos();
         private string idreferencia = null;
         private bool editar = false;
+        private string reference;
 
         public FormProducto()
         {
@@ -49,23 +50,25 @@ namespace Presentation
             D_Productos objetoDMostrar = new D_Productos();
             DgvProducto.DataSource = objetoDMostrar.MostrarProductos();
         }
-        private void BuscarProductoRef(string referencia)
+        private void BuscarProducto(string descripcion, string categoria, string referencia)
         {
             D_Productos objetoDBuscar = new D_Productos();
-            DgvProducto.DataSource = objetoDBuscar.BuscarProductoRef(referencia);
+
+            if (TxtBReferencia.Text == "")
+            {
+                DgvProducto.DataSource = objetoDBuscar.BuscarProducto(descripcion, categoria, reference);
+            }
+            else if (TxtBReferencia.Text == " ")
+            {
+                TxtBReferencia.Text = String.Empty;
+                DgvProducto.DataSource = objetoDBuscar.BuscarProducto(descripcion, categoria, reference);
+            }
+            else if (TxtBReferencia.Text != String.Empty)
+            {
+                DgvProducto.DataSource = objetoDBuscar.BuscarProducto(descripcion, categoria, referencia);
+            }
         }
 
-        private void BuscarProductoCat(string categoria)
-        {
-            D_Productos objetoDBuscar = new D_Productos();
-            DgvProducto.DataSource = objetoDBuscar.BuscarProductoCat(categoria);
-        }
-
-        private void BuscarProductoDesc(string descripcion)
-        {
-            D_Productos objetoDBuscar = new D_Productos();
-            DgvProducto.DataSource = objetoDBuscar.BuscarProductoDesc(descripcion);
-        }
 
         private void LimpiarFormulario()
         {
@@ -118,7 +121,6 @@ namespace Presentation
                     MessageBox.Show("No se ha podido editar los datos por: " + ex);
                 }
             }
-
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -168,59 +170,21 @@ namespace Presentation
 
         private void TxtBReferencia_TextChanged(object sender, EventArgs e)
         {
-            if (TxtBReferencia.Text == String.Empty)
-            {
-                MostrarProductos();
-            }
-            else
-            {
-                BuscarProductoRef(TxtBReferencia.Text);
-            }
+
+            BuscarProducto(TxtBDescripcion.Text, CmbBCategoria.Text, TxtBReferencia.Text);
         }
 
         private void TxtBDescripcion_TextChanged(object sender, EventArgs e)
         {
-            if (TxtBDescripcion.Text == String.Empty)
-            {
-                MostrarProductos();
-            }
-            else
-            {
-                BuscarProductoDesc(TxtBDescripcion.Text);
-            }
+            BuscarProducto(TxtBDescripcion.Text, CmbBCategoria.Text, TxtBReferencia.Text);
         }
 
         private void CmbBCategoria_TextChanged(object sender, EventArgs e)
         {
-            if (CmbBCategoria.Text == String.Empty)
-            {
-                MostrarProductos();
-            }
-            else
-            {
-                BuscarProductoCat(CmbBCategoria.Text);
-            }
+            BuscarProducto(TxtBDescripcion.Text, CmbBCategoria.Text, TxtBReferencia.Text);
         }
 
-
-        private void TxtBReferencia_Click(object sender, EventArgs e)
-        {
-            CmbBCategoria.Text = String.Empty;
-            TxtBDescripcion.Text = String.Empty;
-        }
-
-        private void TxtBDescripcion_Click(object sender, EventArgs e)
-        {
-            TxtBReferencia.Text = String.Empty;
-            CmbBCategoria.Text = String.Empty;
-        }
-
-        private void CmbBCategoria_Click(object sender, EventArgs e)
-        {
-            TxtBReferencia.Text = String.Empty;
-            TxtBDescripcion.Text = String.Empty;
-        }
-
+        //MOSTRAR TODOS LOS PRODUTOS
         private void iBtnBuscar_Click(object sender, EventArgs e)
         {
             MostrarProductos();

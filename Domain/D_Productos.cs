@@ -48,26 +48,13 @@ namespace Domain
             objetoDA.EliminarProducto(Convert.ToInt32(referencia));
         }
 
-        public DataTable BuscarProductoRef(string referencia)
+        public DataTable BuscarProducto(string descripcion, string categoria, string referencia)
         {
             DataTable tabla = new DataTable();
-            tabla = objetoDA.BuscarProductoRef(Convert.ToInt32(referencia));
+            tabla = objetoDA.BuscarProducto(descripcion, categoria, Convert.ToInt32(referencia));
 
             return tabla;
         }
-        public DataTable BuscarProductoCat(string categoria)
-        {
-            DataTable tabla = new DataTable();
-            tabla = objetoDA.BuscarProductoCat(categoria);
 
-            return tabla;
-        }
-        public DataTable BuscarProductoDesc(string descripcion)
-        {
-            DataTable tabla = new DataTable();
-            tabla = objetoDA.BuscarProductoDesc(descripcion);
-
-            return tabla;
-        }
     }
 }

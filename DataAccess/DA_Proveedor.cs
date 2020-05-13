@@ -57,7 +57,7 @@ namespace DataAccess
         public DataTable BuscarProveedor(string nombre, string nif, string email, string municipio, string provincia, string cp)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT id_proveedor AS Código, nombre AS Nombre, nif AS NIF, municipio AS Municipio, provincia AS Provincia, pais AS País, calle AS Calle,cp AS CP, email AS Email, telf AS Teléfono FROM proveedor WHERE (proveedor.nombre LIKE CONCAT('%', @Nombre, '%')) AND (proveedor.nif LIKE CONCAT('%', @Nif, '%')) AND (proveedor.email LIKE CONCAT('%', @Email, '%')) AND (proveedor.municipio LIKE CONCAT('%', @Municipio, '%')) AND (proveedor.provincia LIKE CONCAT('%', @Provincia, '%')) AND (proveedor.cp LIKE CONCAT('%', @CP, '%'));";
+            comando.CommandText = "SELECT id_proveedor AS Código, nombre AS Nombre, nif AS NIF, municipio AS Municipio, provincia AS Provincia, pais AS País, calle AS Calle,cp AS CP, email AS Email, telf AS Teléfono FROM proveedor WHERE (proveedor.nombre LIKE CONCAT('%', @Nombre, '%')) AND (proveedor.nif LIKE CONCAT('%', @Nif, '%')) AND (proveedor.email LIKE CONCAT('%', @Email, '%')) AND (proveedor.municipio LIKE CONCAT('%', @Municipio, '%')) AND (proveedor.provincia LIKE CONCAT('%', @Provincia, '%')) AND (proveedor.cp LIKE CONCAT('%', @Cp, '%'));";
             comando.Parameters.AddWithValue("@Nombre", nombre);
             comando.Parameters.AddWithValue("@Nif", nif);
             comando.Parameters.AddWithValue("@Email", email);

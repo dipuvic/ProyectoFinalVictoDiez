@@ -68,38 +68,15 @@ namespace DataAccess
             conexion.CerrarConexion();
         }
 
-        public DataTable BuscarProductoRef(int referencia)
+        public DataTable BuscarProducto(string descripcion, string categoria, int referencia)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE(producto.referencia LIKE CONCAT('%', @Referencia, '%')) ORDER BY referencia;" ;
-            
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE (producto.referencia LIKE CONCAT('%', @Referencia, '%')) AND (producto.descripcion LIKE CONCAT('%', @Descripcion, '%')) AND (categoria.catpadre LIKE CONCAT('%', @Categoria, '%'));";
+
             comando.Parameters.AddWithValue("@Referencia", referencia);
-
-            leerprod = comando.ExecuteReader();
-            tabla.Load(leerprod);
-            conexion.CerrarConexion();
-
-            return tabla;
-        }
-        public DataTable BuscarProductoCat(string categoria)
-        {
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE(categoria.catpadre LIKE CONCAT('%', @Categoria, '%'));";
-
-            comando.Parameters.AddWithValue("@Categoria", categoria);
-
-            leerprod = comando.ExecuteReader();
-            tabla.Load(leerprod);
-            conexion.CerrarConexion();
-
-            return tabla;
-        }
-        public DataTable BuscarProductoDesc(string descripcion)
-        {
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE(producto.descripcion LIKE CONCAT('%', @Descripcion, '%'));";
-
+            //comando.Parameters.Add(@Referencia, referencia);
             comando.Parameters.AddWithValue("@Descripcion", descripcion);
+            comando.Parameters.AddWithValue("@Categoria", categoria);
 
             leerprod = comando.ExecuteReader();
             tabla.Load(leerprod);

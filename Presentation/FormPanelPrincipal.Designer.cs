@@ -80,7 +80,7 @@
             // LblFrase
             // 
             this.LblFrase.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblFrase.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFrase.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFrase.ForeColor = System.Drawing.Color.Transparent;
             this.LblFrase.Location = new System.Drawing.Point(3, 148);
             this.LblFrase.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);

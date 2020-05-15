@@ -20,7 +20,7 @@ namespace Presentation.BtnCalidad
 
         private void FormCalidad_Load(object sender, EventArgs e)
         {
-            TxtUsuario.Text = UserLoginCache.Nombre + " " + UserLoginCache.Apellido;
+            
         }
     }
 }

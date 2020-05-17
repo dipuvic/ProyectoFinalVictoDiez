@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnIngresar = new System.Windows.Forms.Button();
-            this.DgvProveedor = new System.Windows.Forms.DataGridView();
+            this.DgvCalidad = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.FlpBuscarCliente = new System.Windows.Forms.FlowLayoutPanel();
@@ -81,7 +81,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.LblTituloMostrar = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCalidad)).BeginInit();
             this.FlpBuscarCliente.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
@@ -98,22 +98,22 @@
             this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIngresar.ForeColor = System.Drawing.Color.White;
-            this.BtnIngresar.Location = new System.Drawing.Point(660, 386);
+            this.BtnIngresar.Location = new System.Drawing.Point(555, 388);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(280, 32);
             this.BtnIngresar.TabIndex = 10;
             this.BtnIngresar.Text = "Visto bueno del artículo";
             this.BtnIngresar.UseVisualStyleBackColor = false;
             // 
-            // DgvProveedor
+            // DgvCalidad
             // 
-            this.DgvProveedor.AllowUserToAddRows = false;
-            this.DgvProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DgvProveedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DgvProveedor.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DgvProveedor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            this.DgvProveedor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DgvProveedor.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DgvCalidad.AllowUserToAddRows = false;
+            this.DgvCalidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DgvCalidad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DgvCalidad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DgvCalidad.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            this.DgvCalidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DgvCalidad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,9 +121,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvProveedor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvProveedor.ColumnHeadersHeight = 30;
-            this.DgvProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DgvCalidad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvCalidad.ColumnHeadersHeight = 30;
+            this.DgvCalidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,12 +131,12 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvProveedor.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvProveedor.EnableHeadersVisualStyles = false;
-            this.DgvProveedor.GridColor = System.Drawing.Color.SteelBlue;
-            this.DgvProveedor.Location = new System.Drawing.Point(27, 424);
-            this.DgvProveedor.Name = "DgvProveedor";
-            this.DgvProveedor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DgvCalidad.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvCalidad.EnableHeadersVisualStyles = false;
+            this.DgvCalidad.GridColor = System.Drawing.Color.SteelBlue;
+            this.DgvCalidad.Location = new System.Drawing.Point(23, 426);
+            this.DgvCalidad.Name = "DgvCalidad";
+            this.DgvCalidad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -144,15 +144,15 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvProveedor.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.DgvProveedor.RowHeadersVisible = false;
+            this.DgvCalidad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvCalidad.RowHeadersVisible = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.DgvProveedor.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DgvProveedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvProveedor.Size = new System.Drawing.Size(890, 203);
-            this.DgvProveedor.TabIndex = 38;
+            this.DgvCalidad.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DgvCalidad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvCalidad.Size = new System.Drawing.Size(890, 209);
+            this.DgvCalidad.TabIndex = 38;
             // 
             // panel3
             // 
@@ -4816,7 +4816,7 @@
             this.LblTituloProveedor.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.LblTituloProveedor.Size = new System.Drawing.Size(728, 23);
             this.LblTituloProveedor.TabIndex = 2;
-            this.LblTituloProveedor.Text = "ALTA PROVEEDOR";
+            this.LblTituloProveedor.Text = "REGISTRAR LLAMADA";
             this.LblTituloProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // flowLayoutPanel2
@@ -11783,9 +11783,9 @@
             this.LblTituloMostrar.ForeColor = System.Drawing.Color.White;
             this.LblTituloMostrar.Location = new System.Drawing.Point(123, 391);
             this.LblTituloMostrar.Name = "LblTituloMostrar";
-            this.LblTituloMostrar.Size = new System.Drawing.Size(189, 23);
+            this.LblTituloMostrar.Size = new System.Drawing.Size(236, 23);
             this.LblTituloMostrar.TabIndex = 45;
-            this.LblTituloMostrar.Text = "DATOS PROVEEDOR";
+            this.LblTituloMostrar.Text = "REGISTRO DE LLAMADAS";
             // 
             // FormCalidad
             // 
@@ -11798,13 +11798,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.FlpBuscarCliente);
             this.Controls.Add(this.FlpIngresarCliente);
-            this.Controls.Add(this.DgvProveedor);
+            this.Controls.Add(this.DgvCalidad);
             this.Controls.Add(this.BtnIngresar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCalidad";
             this.Text = "FormCalidad";
             this.Load += new System.EventHandler(this.FormCalidad_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCalidad)).EndInit();
             this.FlpBuscarCliente.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel7.ResumeLayout(false);
@@ -11822,7 +11822,7 @@
 
         #endregion
         private System.Windows.Forms.Button BtnIngresar;
-        private System.Windows.Forms.DataGridView DgvProveedor;
+        private System.Windows.Forms.DataGridView DgvCalidad;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel FlpBuscarCliente;

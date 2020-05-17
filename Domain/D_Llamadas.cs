@@ -20,11 +20,31 @@ namespace Domain
             tabla = objLlamadas.ListarUsuarios();
             return tabla;
         }
-
-        public DataTable MostrarRegistroLlamadas()
+        public DataTable ListarClientes()
         {
             DataTable tabla = new DataTable();
-            tabla = objLlamadas.MostrarRegistroLlamadas();
+            tabla = objLlamadas.ListarClientes();
+            return tabla;
+        }
+        public DataTable ListarReferencias()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objLlamadas.ListarReferencias();
+            return tabla;
+        }
+
+        public DataTable MostrarProductos()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objLlamadas.MostrarProductos();
+
+            return tabla;
+        }
+
+        public DataTable BuscarRef(string referencia)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objLlamadas.BuscarRef(Convert.ToInt32(referencia));
 
             return tabla;
         }

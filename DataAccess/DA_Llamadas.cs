@@ -17,11 +17,34 @@ namespace DataAccess
         MySqlDataReader leerFilas;
         DataTable tabla = new DataTable();
 
+        //Funciones datatable para listar los correspondientes combobox
         public DataTable ListarUsuarios()
         {
             DataTable tabla = new DataTable();
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "Select id_user, concat_ws(' ', usuario.nombre, usuario.apellido) as Persona From usuario;";
+            comando.CommandText = "Select id_user, concat_ws(' ', usuario.nombre, usuario.apellido) as Persona From usuario ORDER BY Persona ASC;";
+            leerFilas = comando.ExecuteReader();
+            tabla.Load(leerFilas);
+            leerFilas.Close();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+        public DataTable ListarClientes()
+        {
+            DataTable tabla = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "Select id_cliente, nombre as Cliente From cliente ORDER BY Cliente ASC;";
+            leerFilas = comando.ExecuteReader();
+            tabla.Load(leerFilas);
+            leerFilas.Close();
+            conexion.CerrarConexion();
+            return tabla;
+        }
+        public DataTable ListarReferencias()
+        {
+            DataTable tabla = new DataTable();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "Select referencia From producto ORDER BY referencia ASC;";
             leerFilas = comando.ExecuteReader();
             tabla.Load(leerFilas);
             leerFilas.Close();
@@ -29,10 +52,25 @@ namespace DataAccess
             return tabla;
         }
 
-        public DataTable MostrarRegistroLlamadas()
+
+        public DataTable MostrarProductos()
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT cargo.cargo as PasaLlamada, concat_ws(' ', usuario.nombre, usuario.apellido) as Atiende, cliente.nombre AS Cliente, producto.referencia AS Referencia, producto.descripcion As Descripción, llamadas.problema AS Problema, llamadas.observacion AS Observación FROM llamadas INNER JOIN cargo ON llamadas.idcargo = cargo.idcargo INNER JOIN usuario ON llamadas.idusuario = usuario.id_user INNER JOIN cliente ON llamadas.idcliente = cliente.id_cliente INNER JOIN llamadas_productos ON llamadas.idllamada = llamadas_productos.idllamada INNER JOIN producto ON llamadas_productos.referencia = producto.referencia; ; ";
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto INNER JOIN categoria ON producto.idcat = categoria.idcat ORDER BY referencia; ";
+            leerFilas = comando.ExecuteReader();
+            tabla.Load(leerFilas);
+            conexion.CerrarConexion();
+
+            return tabla;
+        }
+
+        public DataTable BuscarRef(int referencia)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto INNER JOIN categoria ON producto.idcat = categoria.idcat WHERE (producto.referencia LIKE CONCAT('%', @Referencia, '%')) ORDER BY referencia ASC;";
+
+            comando.Parameters.AddWithValue("@Referencia", referencia);
+
             leerFilas = comando.ExecuteReader();
             tabla.Load(leerFilas);
             conexion.CerrarConexion();

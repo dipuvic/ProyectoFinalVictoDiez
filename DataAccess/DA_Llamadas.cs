@@ -40,17 +40,7 @@ namespace DataAccess
             conexion.CerrarConexion();
             return tabla;
         }
-        public DataTable ListarReferencias()
-        {
-            DataTable tabla = new DataTable();
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "Select referencia From producto ORDER BY referencia ASC;";
-            leerFilas = comando.ExecuteReader();
-            tabla.Load(leerFilas);
-            leerFilas.Close();
-            conexion.CerrarConexion();
-            return tabla;
-        }
+
 
 
         public DataTable MostrarProductos()

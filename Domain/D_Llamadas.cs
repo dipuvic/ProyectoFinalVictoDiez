@@ -26,12 +26,7 @@ namespace Domain
             tabla = objLlamadas.ListarClientes();
             return tabla;
         }
-        public DataTable ListarReferencias()
-        {
-            DataTable tabla = new DataTable();
-            tabla = objLlamadas.ListarReferencias();
-            return tabla;
-        }
+
 
         public DataTable MostrarProductos()
         {

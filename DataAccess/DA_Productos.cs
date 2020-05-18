@@ -74,7 +74,6 @@ namespace DataAccess
             comando.CommandText = "SELECT producto.referencia AS Referencia, producto.descripcion AS Descripción, categoria.catpadre AS Categoria, producto.precio AS Precio FROM producto  INNER JOIN categoria ON categoria.idcat = producto.idcat WHERE (producto.referencia LIKE CONCAT('%', @Referencia, '%')) AND (producto.descripcion LIKE CONCAT('%', @Descripcion, '%')) AND (categoria.catpadre LIKE CONCAT('%', @Categoria, '%'));";
 
             comando.Parameters.AddWithValue("@Referencia", referencia);
-            //comando.Parameters.Add(@Referencia, referencia);
             comando.Parameters.AddWithValue("@Descripcion", descripcion);
             comando.Parameters.AddWithValue("@Categoria", categoria);
 

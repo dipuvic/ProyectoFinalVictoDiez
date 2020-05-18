@@ -24,8 +24,8 @@ namespace Presentation.BtnLlamadas
         {
             ListarUsuarios();
             ListarClientes();
-            ListarReferencias();
-           // LimpiarFormulario();
+            //ListarReferencias();
+            LimpiarFormulario();
             MostrarProductos();
         }
 
@@ -33,7 +33,7 @@ namespace Presentation.BtnLlamadas
         {
             CmbCompi.Text = String.Empty;
             CmbCliente.Text = String.Empty;
-            CmbRef.Text = String.Empty;
+            TxtRef.Text = "";
             TxtProblem.Text = String.Empty;
             TxtObserva.Text = String.Empty;
         }
@@ -52,12 +52,6 @@ namespace Presentation.BtnLlamadas
             CmbCliente.DisplayMember = "Cliente";
             CmbCliente.ValueMember = "id_cliente";
         }
-        private void ListarReferencias()
-        {
-            D_Llamadas objLlamadas = new D_Llamadas();
-            CmbRef.DataSource = objLlamadas.ListarReferencias();
-            CmbRef.DisplayMember = "referencia";
-        }
 
         private void MostrarProductos()
         {
@@ -68,24 +62,25 @@ namespace Presentation.BtnLlamadas
         private void BuscarRef(string referencia)
         {
             D_Llamadas objetoDBuscar = new D_Llamadas();
-            if (CmbRef.Text == "")
+
+            if (TxtRef.Text == "")
             {
                 DgvProducto.DataSource = objetoDBuscar.BuscarRef(reference);
             }
-            else if (CmbRef.Text == " ")
+            else if (TxtRef.Text == " ")
             {
-                CmbRef.Text = String.Empty;
+                TxtRef.Text = String.Empty;
                 DgvProducto.DataSource = objetoDBuscar.BuscarRef(reference);
             }
-            else if (CmbRef.Text != String.Empty)
+            else if (TxtRef.Text != String.Empty)
             {
                 DgvProducto.DataSource = objetoDBuscar.BuscarRef(referencia);
             }
         }
 
-        private void CmbRef_TextChanged(object sender, EventArgs e)
+        private void TxtRef_TextChanged(object sender, EventArgs e)
         {
-            BuscarRef(CmbRef.Text);
+            BuscarRef(TxtRef.Text);
         }
     }
 }

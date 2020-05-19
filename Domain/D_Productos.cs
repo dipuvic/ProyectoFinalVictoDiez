@@ -38,6 +38,7 @@ namespace Domain
 
             objetoDA.InsertarProducto(sumaindice, descripcion, precio);
         }
+
         public void EditarProducto(string referencia, string descripcion, string precio)
         {
             

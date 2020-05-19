@@ -42,6 +42,7 @@
             this.LblCliente = new System.Windows.Forms.Label();
             this.CmbCliente = new System.Windows.Forms.ComboBox();
             this.LblRef = new System.Windows.Forms.Label();
+            this.TxtRef = new System.Windows.Forms.TextBox();
             this.LblProblem = new System.Windows.Forms.Label();
             this.TxtProblem = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
@@ -51,8 +52,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.BtnRegistro = new System.Windows.Forms.Button();
             this.DgvProducto = new System.Windows.Forms.DataGridView();
-            this.TxtRef = new System.Windows.Forms.TextBox();
             this.FlpIngresarCliente.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
@@ -67,7 +68,7 @@
             this.LblTituloMostrar.BackColor = System.Drawing.Color.Transparent;
             this.LblTituloMostrar.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTituloMostrar.ForeColor = System.Drawing.Color.White;
-            this.LblTituloMostrar.Location = new System.Drawing.Point(123, 326);
+            this.LblTituloMostrar.Location = new System.Drawing.Point(123, 355);
             this.LblTituloMostrar.Name = "LblTituloMostrar";
             this.LblTituloMostrar.Size = new System.Drawing.Size(102, 23);
             this.LblTituloMostrar.TabIndex = 52;
@@ -77,7 +78,7 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Location = new System.Drawing.Point(104, 304);
+            this.panel2.Location = new System.Drawing.Point(104, 338);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(733, 2);
             this.panel2.TabIndex = 50;
@@ -90,9 +91,10 @@
             this.FlpIngresarCliente.Controls.Add(this.flowLayoutPanel2);
             this.FlpIngresarCliente.Controls.Add(this.flowLayoutPanel4);
             this.FlpIngresarCliente.Controls.Add(this.flowLayoutPanel3);
+            this.FlpIngresarCliente.Controls.Add(this.BtnRegistro);
             this.FlpIngresarCliente.Location = new System.Drawing.Point(104, 18);
             this.FlpIngresarCliente.Name = "FlpIngresarCliente";
-            this.FlpIngresarCliente.Size = new System.Drawing.Size(733, 280);
+            this.FlpIngresarCliente.Size = new System.Drawing.Size(733, 314);
             this.FlpIngresarCliente.TabIndex = 48;
             // 
             // LblTituloProveedor
@@ -150,7 +152,7 @@
             this.CmbCompi.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
             this.CmbCompi.Name = "CmbCompi";
             this.CmbCompi.Size = new System.Drawing.Size(230, 21);
-            this.CmbCompi.TabIndex = 25;
+            this.CmbCompi.TabIndex = 1;
             // 
             // LblCliente
             // 
@@ -175,7 +177,7 @@
             this.CmbCliente.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
             this.CmbCliente.Name = "CmbCliente";
             this.CmbCliente.Size = new System.Drawing.Size(230, 21);
-            this.CmbCliente.TabIndex = 26;
+            this.CmbCliente.TabIndex = 2;
             // 
             // LblRef
             // 
@@ -189,6 +191,17 @@
             this.LblRef.TabIndex = 4;
             this.LblRef.Text = "Referencia:";
             this.LblRef.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TxtRef
+            // 
+            this.TxtRef.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtRef.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.TxtRef.Location = new System.Drawing.Point(83, 56);
+            this.TxtRef.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
+            this.TxtRef.Name = "TxtRef";
+            this.TxtRef.Size = new System.Drawing.Size(230, 20);
+            this.TxtRef.TabIndex = 3;
+            this.TxtRef.TextChanged += new System.EventHandler(this.TxtRef_TextChanged);
             // 
             // LblProblem
             // 
@@ -213,7 +226,7 @@
             this.TxtProblem.Multiline = true;
             this.TxtProblem.Name = "TxtProblem";
             this.TxtProblem.Size = new System.Drawing.Size(230, 90);
-            this.TxtProblem.TabIndex = 33;
+            this.TxtProblem.TabIndex = 4;
             // 
             // flowLayoutPanel4
             // 
@@ -248,7 +261,7 @@
             this.TxtObserva.Multiline = true;
             this.TxtObserva.Name = "TxtObserva";
             this.TxtObserva.Size = new System.Drawing.Size(230, 90);
-            this.TxtObserva.TabIndex = 35;
+            this.TxtObserva.TabIndex = 5;
             // 
             // flowLayoutPanel3
             // 
@@ -278,9 +291,10 @@
             this.BtnRegistrar.Margin = new System.Windows.Forms.Padding(235, 3, 3, 3);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(105, 32);
-            this.BtnRegistrar.TabIndex = 9;
+            this.BtnRegistrar.TabIndex = 6;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // BtnCancelar
             // 
@@ -293,10 +307,26 @@
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(105, 32);
-            this.BtnCancelar.TabIndex = 10;
+            this.BtnCancelar.TabIndex = 7;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = false;
-            this.BtnCancelar.Visible = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnRegistro
+            // 
+            this.BtnRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnRegistro.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistro.ForeColor = System.Drawing.Color.White;
+            this.BtnRegistro.Location = new System.Drawing.Point(238, 277);
+            this.BtnRegistro.Margin = new System.Windows.Forms.Padding(238, 10, 3, 3);
+            this.BtnRegistro.Name = "BtnRegistro";
+            this.BtnRegistro.Size = new System.Drawing.Size(248, 27);
+            this.BtnRegistro.TabIndex = 54;
+            this.BtnRegistro.Text = "Ver registro de llamadas";
+            this.BtnRegistro.UseVisualStyleBackColor = false;
+            this.BtnRegistro.Click += new System.EventHandler(this.BtnRegistro_Click);
             // 
             // DgvProducto
             // 
@@ -327,7 +357,7 @@
             this.DgvProducto.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvProducto.EnableHeadersVisualStyles = false;
             this.DgvProducto.GridColor = System.Drawing.Color.SteelBlue;
-            this.DgvProducto.Location = new System.Drawing.Point(223, 366);
+            this.DgvProducto.Location = new System.Drawing.Point(223, 389);
             this.DgvProducto.Name = "DgvProducto";
             this.DgvProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -344,19 +374,8 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
             this.DgvProducto.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvProducto.Size = new System.Drawing.Size(513, 281);
+            this.DgvProducto.Size = new System.Drawing.Size(513, 251);
             this.DgvProducto.TabIndex = 53;
-            // 
-            // TxtRef
-            // 
-            this.TxtRef.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtRef.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtRef.Location = new System.Drawing.Point(83, 56);
-            this.TxtRef.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
-            this.TxtRef.Name = "TxtRef";
-            this.TxtRef.Size = new System.Drawing.Size(230, 20);
-            this.TxtRef.TabIndex = 34;
-            this.TxtRef.TextChanged += new System.EventHandler(this.TxtRef_TextChanged);
             // 
             // FormLlamada
             // 
@@ -407,5 +426,6 @@
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.TextBox TxtRef;
+        private System.Windows.Forms.Button BtnRegistro;
     }
 }

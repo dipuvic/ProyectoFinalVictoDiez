@@ -74,6 +74,12 @@
     <Compile Include="BtnLlamadas\FormLlamada.Designer.cs">
       <DependentUpon>FormLlamada.cs</DependentUpon>
     </Compile>
+    <Compile Include="BtnLlamadas\FormRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BtnLlamadas\FormRegistro.Designer.cs">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="BtnProveedor\FormProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BtnLlamadas\FormLlamada.resx">
       <DependentUpon>FormLlamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnLlamadas\FormRegistro.resx">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BtnProveedor\FormProveedor.resx">
       <DependentUpon>FormProveedor.cs</DependentUpon>

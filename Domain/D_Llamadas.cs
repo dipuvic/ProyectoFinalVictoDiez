@@ -28,6 +28,14 @@ namespace Domain
         }
 
 
+        public DataTable MostrarRegistros()
+        {
+            DataTable tabla = new DataTable();
+            tabla = objLlamadas.MostrarRegistros();
+
+            return tabla;
+        }
+
         public DataTable MostrarProductos()
         {
             DataTable tabla = new DataTable();
@@ -36,10 +44,25 @@ namespace Domain
             return tabla;
         }
 
+
+        public void InsertarLlamada(string idusuario, string atiende, string idcliente, string referencia, string problema, string observacion)
+        {
+            objLlamadas.InsertarLlamada(Convert.ToInt32(idusuario), Convert.ToInt32(atiende), Convert.ToInt32(idcliente),Convert.ToInt32(referencia), problema, observacion);
+        }
+
+
         public DataTable BuscarRef(string referencia)
         {
             DataTable tabla = new DataTable();
             tabla = objLlamadas.BuscarRef(Convert.ToInt32(referencia));
+
+            return tabla;
+        }
+
+        public DataTable BuscarRegistro(string user, string cliente, string referencia)
+        {
+            DataTable tabla = new DataTable();
+            tabla = objLlamadas.BuscarRegistro(user, cliente, Convert.ToInt32(referencia));
 
             return tabla;
         }

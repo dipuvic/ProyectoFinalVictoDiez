@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
 using Domain;
 
 namespace Presentation.BtnLlamadas
@@ -24,7 +25,6 @@ namespace Presentation.BtnLlamadas
         {
             ListarUsuarios();
             ListarClientes();
-            //ListarReferencias();
             LimpiarFormulario();
             MostrarProductos();
         }
@@ -78,9 +78,42 @@ namespace Presentation.BtnLlamadas
             }
         }
 
+
         private void TxtRef_TextChanged(object sender, EventArgs e)
         {
             BuscarRef(TxtRef.Text);
+        }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            /*
+            try
+            {
+            */
+                D_Llamadas objetoinsertar = new D_Llamadas();
+
+                objetoinsertar.InsertarLlamada(UserLoginCache.IdUser.ToString(), CmbCompi.SelectedValue.ToString(), CmbCliente.SelectedValue.ToString(), TxtRef.Text, TxtProblem.Text, TxtObserva.Text);
+                MessageBox.Show("Se ha Registrado la llamada correctamente.");
+                LimpiarFormulario();
+                MostrarProductos();
+            /*
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se ha podido registrar la llamada por: " + ex);
+            }
+            */
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarFormulario();
+        }
+
+        private void BtnRegistro_Click(object sender, EventArgs e)
+        {
+            FormRegistro form = new FormRegistro();
+            form.Show();
         }
     }
 }

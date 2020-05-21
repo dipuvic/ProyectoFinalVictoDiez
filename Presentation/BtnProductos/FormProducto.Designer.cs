@@ -78,7 +78,7 @@
             this.LblListadoProducto.BackColor = System.Drawing.Color.Transparent;
             this.LblListadoProducto.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblListadoProducto.ForeColor = System.Drawing.Color.White;
-            this.LblListadoProducto.Location = new System.Drawing.Point(32, 202);
+            this.LblListadoProducto.Location = new System.Drawing.Point(411, 31);
             this.LblListadoProducto.Name = "LblListadoProducto";
             this.LblListadoProducto.Size = new System.Drawing.Size(192, 23);
             this.LblListadoProducto.TabIndex = 8;
@@ -92,7 +92,7 @@
             this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel4);
             this.flowLayoutPanel5.Location = new System.Drawing.Point(29, 25);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(873, 151);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(328, 252);
             this.flowLayoutPanel5.TabIndex = 10;
             // 
             // LblEdicionProducto
@@ -122,19 +122,18 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 54);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(873, 29);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(326, 130);
             this.flowLayoutPanel2.TabIndex = 24;
             // 
             // LblReferencia
             // 
             this.LblReferencia.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblReferencia.AutoSize = true;
             this.LblReferencia.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblReferencia.ForeColor = System.Drawing.Color.White;
-            this.LblReferencia.Location = new System.Drawing.Point(10, 7);
-            this.LblReferencia.Margin = new System.Windows.Forms.Padding(10, 5, 0, 0);
+            this.LblReferencia.Location = new System.Drawing.Point(10, 11);
+            this.LblReferencia.Margin = new System.Windows.Forms.Padding(10, 10, 1, 0);
             this.LblReferencia.Name = "LblReferencia";
-            this.LblReferencia.Size = new System.Drawing.Size(72, 16);
+            this.LblReferencia.Size = new System.Drawing.Size(76, 19);
             this.LblReferencia.TabIndex = 0;
             this.LblReferencia.Text = "Referencia:";
             this.LblReferencia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -147,10 +146,10 @@
             this.TxtReferencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtReferencia.Enabled = false;
             this.TxtReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtReferencia.Location = new System.Drawing.Point(85, 5);
-            this.TxtReferencia.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtReferencia.Location = new System.Drawing.Point(90, 10);
+            this.TxtReferencia.Margin = new System.Windows.Forms.Padding(3, 10, 100, 0);
             this.TxtReferencia.Name = "TxtReferencia";
-            this.TxtReferencia.Size = new System.Drawing.Size(72, 21);
+            this.TxtReferencia.Size = new System.Drawing.Size(89, 21);
             this.TxtReferencia.TabIndex = 1;
             this.TxtReferencia.Visible = false;
             // 
@@ -160,8 +159,8 @@
             this.LblDescripcion.AutoSize = true;
             this.LblDescripcion.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDescripcion.ForeColor = System.Drawing.Color.White;
-            this.LblDescripcion.Location = new System.Drawing.Point(177, 7);
-            this.LblDescripcion.Margin = new System.Windows.Forms.Padding(20, 5, 0, 0);
+            this.LblDescripcion.Location = new System.Drawing.Point(10, 43);
+            this.LblDescripcion.Margin = new System.Windows.Forms.Padding(10, 10, 1, 0);
             this.LblDescripcion.Name = "LblDescripcion";
             this.LblDescripcion.Size = new System.Drawing.Size(76, 16);
             this.LblDescripcion.TabIndex = 4;
@@ -172,8 +171,8 @@
             // 
             this.TxtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtDescripcion.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtDescripcion.Location = new System.Drawing.Point(256, 5);
-            this.TxtDescripcion.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtDescripcion.Location = new System.Drawing.Point(90, 41);
+            this.TxtDescripcion.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.Size = new System.Drawing.Size(232, 20);
             this.TxtDescripcion.TabIndex = 3;
@@ -181,13 +180,12 @@
             // LblPrecio
             // 
             this.LblPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblPrecio.AutoSize = true;
             this.LblPrecio.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPrecio.ForeColor = System.Drawing.Color.White;
-            this.LblPrecio.Location = new System.Drawing.Point(508, 7);
-            this.LblPrecio.Margin = new System.Windows.Forms.Padding(20, 5, 0, 0);
+            this.LblPrecio.Location = new System.Drawing.Point(10, 72);
+            this.LblPrecio.Margin = new System.Windows.Forms.Padding(10, 10, 1, 0);
             this.LblPrecio.Name = "LblPrecio";
-            this.LblPrecio.Size = new System.Drawing.Size(46, 16);
+            this.LblPrecio.Size = new System.Drawing.Size(76, 18);
             this.LblPrecio.TabIndex = 13;
             this.LblPrecio.Text = "Precio:";
             this.LblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -196,8 +194,8 @@
             // 
             this.TxtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtPrecio.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtPrecio.Location = new System.Drawing.Point(557, 5);
-            this.TxtPrecio.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtPrecio.Location = new System.Drawing.Point(90, 71);
+            this.TxtPrecio.Margin = new System.Windows.Forms.Padding(3, 10, 100, 0);
             this.TxtPrecio.Name = "TxtPrecio";
             this.TxtPrecio.Size = new System.Drawing.Size(57, 20);
             this.TxtPrecio.TabIndex = 14;
@@ -205,13 +203,12 @@
             // LblCategoria
             // 
             this.LblCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblCategoria.AutoSize = true;
             this.LblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCategoria.ForeColor = System.Drawing.Color.White;
-            this.LblCategoria.Location = new System.Drawing.Point(634, 7);
-            this.LblCategoria.Margin = new System.Windows.Forms.Padding(20, 5, 0, 0);
+            this.LblCategoria.Location = new System.Drawing.Point(20, 102);
+            this.LblCategoria.Margin = new System.Windows.Forms.Padding(20, 10, 1, 0);
             this.LblCategoria.Name = "LblCategoria";
-            this.LblCategoria.Size = new System.Drawing.Size(64, 16);
+            this.LblCategoria.Size = new System.Drawing.Size(66, 19);
             this.LblCategoria.TabIndex = 15;
             this.LblCategoria.Text = "Categoria:";
             this.LblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -223,8 +220,8 @@
             this.CmbCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CmbCategoria.ForeColor = System.Drawing.Color.Black;
             this.CmbCategoria.FormattingEnabled = true;
-            this.CmbCategoria.Location = new System.Drawing.Point(701, 5);
-            this.CmbCategoria.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.CmbCategoria.Location = new System.Drawing.Point(90, 101);
+            this.CmbCategoria.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.CmbCategoria.Name = "CmbCategoria";
             this.CmbCategoria.Size = new System.Drawing.Size(154, 21);
             this.CmbCategoria.TabIndex = 16;
@@ -234,9 +231,9 @@
             this.flowLayoutPanel4.Controls.Add(this.panel2);
             this.flowLayoutPanel4.Controls.Add(this.BtnIngresar);
             this.flowLayoutPanel4.Controls.Add(this.BtnCancelar);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 86);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 187);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(870, 65);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(323, 60);
             this.flowLayoutPanel4.TabIndex = 27;
             // 
             // panel2
@@ -244,7 +241,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(867, 10);
+            this.panel2.Size = new System.Drawing.Size(320, 10);
             this.panel2.TabIndex = 3;
             // 
             // BtnIngresar
@@ -254,8 +251,8 @@
             this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnIngresar.ForeColor = System.Drawing.Color.White;
-            this.BtnIngresar.Location = new System.Drawing.Point(300, 19);
-            this.BtnIngresar.Margin = new System.Windows.Forms.Padding(300, 3, 3, 3);
+            this.BtnIngresar.Location = new System.Drawing.Point(40, 19);
+            this.BtnIngresar.Margin = new System.Windows.Forms.Padding(40, 3, 3, 3);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(105, 32);
             this.BtnIngresar.TabIndex = 4;
@@ -270,7 +267,7 @@
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
-            this.BtnCancelar.Location = new System.Drawing.Point(443, 19);
+            this.BtnCancelar.Location = new System.Drawing.Point(183, 19);
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(105, 32);
@@ -323,7 +320,7 @@
             this.DgvProducto.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvProducto.EnableHeadersVisualStyles = false;
             this.DgvProducto.GridColor = System.Drawing.Color.SteelBlue;
-            this.DgvProducto.Location = new System.Drawing.Point(317, 231);
+            this.DgvProducto.Location = new System.Drawing.Point(401, 120);
             this.DgvProducto.Name = "DgvProducto";
             this.DgvProducto.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -340,7 +337,7 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
             this.DgvProducto.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvProducto.Size = new System.Drawing.Size(513, 416);
+            this.DgvProducto.Size = new System.Drawing.Size(513, 511);
             this.DgvProducto.TabIndex = 20;
             // 
             // BtnEliminar
@@ -350,7 +347,7 @@
             this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminar.Location = new System.Drawing.Point(202, 260);
+            this.BtnEliminar.Location = new System.Drawing.Point(518, 79);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(73, 25);
             this.BtnEliminar.TabIndex = 23;
@@ -365,7 +362,7 @@
             this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEditar.ForeColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(104, 260);
+            this.BtnEditar.Location = new System.Drawing.Point(420, 79);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(73, 25);
             this.BtnEditar.TabIndex = 22;
@@ -384,10 +381,10 @@
             this.flowLayoutPanel3.Controls.Add(this.label2);
             this.flowLayoutPanel3.Controls.Add(this.CmbBCategoria);
             this.flowLayoutPanel3.Controls.Add(this.panel1);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(29, 333);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(29, 346);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(245, 184);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(291, 184);
             this.flowLayoutPanel3.TabIndex = 25;
             // 
             // label1
@@ -395,10 +392,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label1.Location = new System.Drawing.Point(0, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(120, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Referencia:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -409,8 +406,8 @@
             this.TxtBReferencia.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.TxtBReferencia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBReferencia.Location = new System.Drawing.Point(83, 44);
-            this.TxtBReferencia.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtBReferencia.Location = new System.Drawing.Point(123, 46);
+            this.TxtBReferencia.Margin = new System.Windows.Forms.Padding(3, 7, 0, 0);
             this.TxtBReferencia.Name = "TxtBReferencia";
             this.TxtBReferencia.Size = new System.Drawing.Size(138, 21);
             this.TxtBReferencia.TabIndex = 1;
@@ -421,10 +418,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(0, 70);
-            this.label4.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label4.Location = new System.Drawing.Point(0, 74);
+            this.label4.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 20);
+            this.label4.Size = new System.Drawing.Size(120, 20);
             this.label4.TabIndex = 15;
             this.label4.Text = "Descripción:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -435,8 +432,8 @@
             this.TxtBDescripcion.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.TxtBDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtBDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBDescripcion.Location = new System.Drawing.Point(83, 70);
-            this.TxtBDescripcion.Margin = new System.Windows.Forms.Padding(3, 5, 0, 0);
+            this.TxtBDescripcion.Location = new System.Drawing.Point(123, 74);
+            this.TxtBDescripcion.Margin = new System.Windows.Forms.Padding(3, 7, 0, 0);
             this.TxtBDescripcion.Name = "TxtBDescripcion";
             this.TxtBDescripcion.Size = new System.Drawing.Size(138, 21);
             this.TxtBDescripcion.TabIndex = 16;
@@ -447,10 +444,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 96);
-            this.label2.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label2.Location = new System.Drawing.Point(0, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "Categoria:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -462,8 +459,8 @@
             this.CmbBCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CmbBCategoria.ForeColor = System.Drawing.Color.Black;
             this.CmbBCategoria.FormattingEnabled = true;
-            this.CmbBCategoria.Location = new System.Drawing.Point(83, 96);
-            this.CmbBCategoria.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
+            this.CmbBCategoria.Location = new System.Drawing.Point(123, 102);
+            this.CmbBCategoria.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
             this.CmbBCategoria.Name = "CmbBCategoria";
             this.CmbBCategoria.Size = new System.Drawing.Size(138, 21);
             this.CmbBCategoria.TabIndex = 14;
@@ -472,9 +469,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.iBtnBuscar);
-            this.panel1.Location = new System.Drawing.Point(3, 120);
+            this.panel1.Location = new System.Drawing.Point(3, 126);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(239, 52);
+            this.panel1.Size = new System.Drawing.Size(288, 52);
             this.panel1.TabIndex = 27;
             // 
             // iBtnBuscar
@@ -487,7 +484,7 @@
             this.iBtnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
             this.iBtnBuscar.IconColor = System.Drawing.Color.White;
             this.iBtnBuscar.IconSize = 16;
-            this.iBtnBuscar.Location = new System.Drawing.Point(56, 15);
+            this.iBtnBuscar.Location = new System.Drawing.Point(81, 15);
             this.iBtnBuscar.Name = "iBtnBuscar";
             this.iBtnBuscar.Rotation = 0D;
             this.iBtnBuscar.Size = new System.Drawing.Size(134, 26);
@@ -501,18 +498,18 @@
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel3.Location = new System.Drawing.Point(28, 182);
+            this.panel3.Location = new System.Drawing.Point(374, 60);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(870, 2);
+            this.panel3.Size = new System.Drawing.Size(3, 580);
             this.panel3.TabIndex = 26;
             // 
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel4.Location = new System.Drawing.Point(28, 313);
+            this.panel4.Location = new System.Drawing.Point(28, 301);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(250, 2);
+            this.panel4.Size = new System.Drawing.Size(325, 2);
             this.panel4.TabIndex = 27;
             // 
             // FormProducto

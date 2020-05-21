@@ -69,7 +69,7 @@
             this.flowLayoutPanel7.Controls.Add(this.TxtCliente);
             this.flowLayoutPanel7.Controls.Add(this.LblRef);
             this.flowLayoutPanel7.Controls.Add(this.TxtRef);
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(73, 76);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(73, 94);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(1107, 35);
             this.flowLayoutPanel7.TabIndex = 55;
@@ -186,7 +186,7 @@
             this.DgvRegistro.DefaultCellStyle = dataGridViewCellStyle2;
             this.DgvRegistro.EnableHeadersVisualStyles = false;
             this.DgvRegistro.GridColor = System.Drawing.Color.SteelBlue;
-            this.DgvRegistro.Location = new System.Drawing.Point(33, 157);
+            this.DgvRegistro.Location = new System.Drawing.Point(33, 146);
             this.DgvRegistro.Name = "DgvRegistro";
             this.DgvRegistro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -203,7 +203,7 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
             this.DgvRegistro.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvRegistro.Size = new System.Drawing.Size(1214, 265);
+            this.DgvRegistro.Size = new System.Drawing.Size(1214, 276);
             this.DgvRegistro.TabIndex = 57;
             // 
             // FormRegistro

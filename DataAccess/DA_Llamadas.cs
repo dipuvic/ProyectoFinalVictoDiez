@@ -44,7 +44,7 @@ namespace DataAccess
         public DataTable MostrarRegistros()
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT llamadas.idllamada AS ID, concat_ws(' ', usuario.nombre, usuario.apellido) as Usuario, cliente.nombre AS Cliente, producto.referencia AS Referencia, llamadas.problema AS Problema, llamadas.observacion AS Observacion FROM llamadas INNER JOIN usuario ON llamadas.idusuario = usuario.id_user INNER JOIN cliente ON llamadas.idcliente = cliente.id_cliente INNER JOIN producto ON llamadas.referencia = producto.referencia; ";
+            comando.CommandText = "SELECT llamadas.idllamada AS ID, concat_ws(' ', usuario.nombre, usuario.apellido) as Usuario, cliente.nombre AS Cliente, producto.referencia AS Referencia, llamadas.problema AS Problema, llamadas.observacion AS Observacion, llamadas.fecha AS Fecha FROM llamadas INNER JOIN usuario ON llamadas.idusuario = usuario.id_user INNER JOIN cliente ON llamadas.idcliente = cliente.id_cliente INNER JOIN producto ON llamadas.referencia = producto.referencia; ";
             leerFilas = comando.ExecuteReader();
             tabla.Load(leerFilas);
             conexion.CerrarConexion();
@@ -88,7 +88,7 @@ namespace DataAccess
         public DataTable BuscarRegistro(string user, string cliente, int referencia)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "SELECT llamadas.idllamada AS ID, concat_ws(' ', usuario.nombre, usuario.apellido) as Usuario, cliente.nombre AS Cliente, producto.referencia AS Referencia, llamadas.problema AS Problema, llamadas.observacion AS Observacion FROM llamadas  INNER JOIN usuario ON llamadas.idusuario = usuario.id_user INNER JOIN cliente ON llamadas.idcliente = cliente.id_cliente INNER JOIN producto ON llamadas.referencia = producto.referencia where(cliente.nombre LIKE CONCAT('%', @Cliente, '%')) AND(producto.referencia LIKE CONCAT('%', @Referencia, '%')) AND((usuario.nombre LIKE CONCAT('%', @Usuario, '%')) OR(usuario.apellido LIKE CONCAT('%', @Usuario, '%'))); ";
+            comando.CommandText = "SELECT llamadas.idllamada AS ID, concat_ws(' ', usuario.nombre, usuario.apellido) as Usuario, cliente.nombre AS Cliente, producto.referencia AS Referencia, llamadas.problema AS Problema, llamadas.observacion AS Observacion, llamadas.fecha AS Fecha FROM llamadas  INNER JOIN usuario ON llamadas.idusuario = usuario.id_user INNER JOIN cliente ON llamadas.idcliente = cliente.id_cliente INNER JOIN producto ON llamadas.referencia = producto.referencia where(cliente.nombre LIKE CONCAT('%', @Cliente, '%')) AND(producto.referencia LIKE CONCAT('%', @Referencia, '%')) AND((usuario.nombre LIKE CONCAT('%', @Usuario, '%')) OR(usuario.apellido LIKE CONCAT('%', @Usuario, '%'))); ";
             comando.Parameters.AddWithValue("@Usuario", user);
             comando.Parameters.AddWithValue("@Cliente", cliente);
             comando.Parameters.AddWithValue("@Referencia", referencia);

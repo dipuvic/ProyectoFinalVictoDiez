@@ -170,7 +170,6 @@ namespace Presentation
 
         private void TxtBReferencia_TextChanged(object sender, EventArgs e)
         {
-
             BuscarProducto(TxtBDescripcion.Text, CmbBCategoria.Text, TxtBReferencia.Text);
         }
 

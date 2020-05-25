@@ -14,6 +14,7 @@ using Presentation.BtnClientes;
 using Presentation.BtnCalidad;
 using Presentation.BtnLlamadas;
 using Presentation.BtnProveedor;
+using Presentation.BtnAlmacen;
 
 namespace Presentation
 {
@@ -180,7 +181,7 @@ namespace Presentation
 
         private void iBtnAlmacen_Click(object sender, EventArgs e)
         {
-            //  AbrirFormulario<FormAlmacen>();
+            AbrirFormulario<FormAlmacen>();
             CleanMenu();
             iBtnAlmacen.BackColor = Color.DimGray;
         }

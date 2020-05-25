@@ -41,6 +41,8 @@ namespace DataAccess
             return tabla;
         }
 
+
+        //Funciones para mostrar los datos guardados
         public DataTable MostrarRegistros()
         {
             comando.Connection = conexion.AbrirConexion();

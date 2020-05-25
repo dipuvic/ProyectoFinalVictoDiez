@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionToMySql.cs" />
+    <Compile Include="DA_Almacen.cs" />
     <Compile Include="DA_Clientes.cs" />
     <Compile Include="DA_Equipo.cs" />
     <Compile Include="DA_Llamadas.cs" />

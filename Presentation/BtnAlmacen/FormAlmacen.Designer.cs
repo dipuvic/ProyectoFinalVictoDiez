@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DgvAlmacen = new System.Windows.Forms.DataGridView();
             this.LblTituloMostrar = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.FlpIngresarCliente = new System.Windows.Forms.FlowLayoutPanel();
-            this.LblLlamada = new System.Windows.Forms.Label();
+            this.LblRegistro = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.LblRef = new System.Windows.Forms.Label();
             this.TxtRef = new System.Windows.Forms.TextBox();
             this.LblLugar = new System.Windows.Forms.Label();
             this.TxtLugar = new System.Windows.Forms.TextBox();
-            this.LblProblem = new System.Windows.Forms.Label();
+            this.LblNota = new System.Windows.Forms.Label();
             this.TxtProblem = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -72,44 +72,44 @@
             this.DgvAlmacen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
             this.DgvAlmacen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DgvAlmacen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvAlmacen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvAlmacen.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.DgvAlmacen.ColumnHeadersHeight = 30;
             this.DgvAlmacen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvAlmacen.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvAlmacen.DefaultCellStyle = dataGridViewCellStyle10;
             this.DgvAlmacen.EnableHeadersVisualStyles = false;
             this.DgvAlmacen.GridColor = System.Drawing.Color.SteelBlue;
-            this.DgvAlmacen.Location = new System.Drawing.Point(221, 389);
+            this.DgvAlmacen.Location = new System.Drawing.Point(402, 64);
             this.DgvAlmacen.Name = "DgvAlmacen";
             this.DgvAlmacen.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvAlmacen.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(15)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvAlmacen.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.DgvAlmacen.RowHeadersVisible = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.DgvAlmacen.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(12)))), ((int)(((byte)(28)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.DgvAlmacen.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.DgvAlmacen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvAlmacen.Size = new System.Drawing.Size(513, 251);
+            this.DgvAlmacen.Size = new System.Drawing.Size(513, 558);
             this.DgvAlmacen.TabIndex = 57;
             // 
             // LblTituloMostrar
@@ -119,7 +119,7 @@
             this.LblTituloMostrar.BackColor = System.Drawing.Color.Transparent;
             this.LblTituloMostrar.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTituloMostrar.ForeColor = System.Drawing.Color.White;
-            this.LblTituloMostrar.Location = new System.Drawing.Point(121, 355);
+            this.LblTituloMostrar.Location = new System.Drawing.Point(434, 20);
             this.LblTituloMostrar.Name = "LblTituloMostrar";
             this.LblTituloMostrar.Size = new System.Drawing.Size(247, 23);
             this.LblTituloMostrar.TabIndex = 56;
@@ -129,38 +129,38 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Location = new System.Drawing.Point(102, 338);
+            this.panel2.Location = new System.Drawing.Point(369, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(733, 2);
+            this.panel2.Size = new System.Drawing.Size(3, 598);
             this.panel2.TabIndex = 55;
             // 
             // FlpIngresarCliente
             // 
             this.FlpIngresarCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.FlpIngresarCliente.BackColor = System.Drawing.Color.Transparent;
-            this.FlpIngresarCliente.Controls.Add(this.LblLlamada);
+            this.FlpIngresarCliente.Controls.Add(this.LblRegistro);
             this.FlpIngresarCliente.Controls.Add(this.flowLayoutPanel2);
             this.FlpIngresarCliente.Controls.Add(this.flowLayoutPanel3);
-            this.FlpIngresarCliente.Location = new System.Drawing.Point(102, 18);
+            this.FlpIngresarCliente.Location = new System.Drawing.Point(12, 12);
             this.FlpIngresarCliente.Name = "FlpIngresarCliente";
-            this.FlpIngresarCliente.Size = new System.Drawing.Size(733, 192);
+            this.FlpIngresarCliente.Size = new System.Drawing.Size(340, 316);
             this.FlpIngresarCliente.TabIndex = 54;
             // 
-            // LblLlamada
+            // LblRegistro
             // 
-            this.LblLlamada.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblLlamada.BackColor = System.Drawing.Color.Transparent;
-            this.LblLlamada.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLlamada.ForeColor = System.Drawing.Color.White;
-            this.LblLlamada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblLlamada.Location = new System.Drawing.Point(3, 8);
-            this.LblLlamada.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.LblLlamada.Name = "LblLlamada";
-            this.LblLlamada.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.LblLlamada.Size = new System.Drawing.Size(728, 23);
-            this.LblLlamada.TabIndex = 2;
-            this.LblLlamada.Text = "REGISTAR LUGAR";
-            this.LblLlamada.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblRegistro.BackColor = System.Drawing.Color.Transparent;
+            this.LblRegistro.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRegistro.ForeColor = System.Drawing.Color.White;
+            this.LblRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblRegistro.Location = new System.Drawing.Point(0, 8);
+            this.LblRegistro.Margin = new System.Windows.Forms.Padding(0, 8, 3, 3);
+            this.LblRegistro.Name = "LblRegistro";
+            this.LblRegistro.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.LblRegistro.Size = new System.Drawing.Size(340, 23);
+            this.LblRegistro.TabIndex = 2;
+            this.LblRegistro.Text = "REGISTAR LUGAR";
+            this.LblRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // flowLayoutPanel2
             // 
@@ -168,12 +168,12 @@
             this.flowLayoutPanel2.Controls.Add(this.TxtRef);
             this.flowLayoutPanel2.Controls.Add(this.LblLugar);
             this.flowLayoutPanel2.Controls.Add(this.TxtLugar);
-            this.flowLayoutPanel2.Controls.Add(this.LblProblem);
+            this.flowLayoutPanel2.Controls.Add(this.LblNota);
             this.flowLayoutPanel2.Controls.Add(this.TxtProblem);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(20, 34);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(10, 34);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(711, 91);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(325, 215);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // LblRef
@@ -181,8 +181,8 @@
             this.LblRef.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblRef.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRef.ForeColor = System.Drawing.Color.White;
-            this.LblRef.Location = new System.Drawing.Point(0, 5);
-            this.LblRef.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.LblRef.Location = new System.Drawing.Point(0, 10);
+            this.LblRef.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.LblRef.Name = "LblRef";
             this.LblRef.Size = new System.Drawing.Size(80, 20);
             this.LblRef.TabIndex = 4;
@@ -193,8 +193,8 @@
             // 
             this.TxtRef.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtRef.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtRef.Location = new System.Drawing.Point(83, 4);
-            this.TxtRef.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
+            this.TxtRef.Location = new System.Drawing.Point(83, 10);
+            this.TxtRef.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
             this.TxtRef.Name = "TxtRef";
             this.TxtRef.Size = new System.Drawing.Size(230, 20);
             this.TxtRef.TabIndex = 3;
@@ -204,8 +204,8 @@
             this.LblLugar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblLugar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblLugar.ForeColor = System.Drawing.Color.White;
-            this.LblLugar.Location = new System.Drawing.Point(333, 5);
-            this.LblLugar.Margin = new System.Windows.Forms.Padding(20, 5, 0, 0);
+            this.LblLugar.Location = new System.Drawing.Point(0, 40);
+            this.LblLugar.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.LblLugar.Name = "LblLugar";
             this.LblLugar.Size = new System.Drawing.Size(80, 20);
             this.LblLugar.TabIndex = 34;
@@ -216,35 +216,35 @@
             // 
             this.TxtLugar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtLugar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtLugar.Location = new System.Drawing.Point(416, 4);
-            this.TxtLugar.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
+            this.TxtLugar.Location = new System.Drawing.Point(83, 40);
+            this.TxtLugar.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
             this.TxtLugar.Name = "TxtLugar";
             this.TxtLugar.Size = new System.Drawing.Size(230, 20);
             this.TxtLugar.TabIndex = 33;
             // 
-            // LblProblem
+            // LblNota
             // 
-            this.LblProblem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblProblem.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblProblem.ForeColor = System.Drawing.Color.White;
-            this.LblProblem.Location = new System.Drawing.Point(0, 42);
-            this.LblProblem.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.LblProblem.Name = "LblProblem";
-            this.LblProblem.Size = new System.Drawing.Size(80, 26);
-            this.LblProblem.TabIndex = 32;
-            this.LblProblem.Text = "Problema:";
-            this.LblProblem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LblNota.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblNota.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNota.ForeColor = System.Drawing.Color.White;
+            this.LblNota.Location = new System.Drawing.Point(0, 71);
+            this.LblNota.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.LblNota.Name = "LblNota";
+            this.LblNota.Size = new System.Drawing.Size(80, 122);
+            this.LblNota.TabIndex = 32;
+            this.LblNota.Text = "Nota:";
+            this.LblNota.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // TxtProblem
             // 
             this.TxtProblem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtProblem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtProblem.Location = new System.Drawing.Point(83, 35);
+            this.TxtProblem.Location = new System.Drawing.Point(83, 70);
             this.TxtProblem.Margin = new System.Windows.Forms.Padding(3, 10, 0, 0);
             this.TxtProblem.MaxLength = 222;
             this.TxtProblem.Multiline = true;
             this.TxtProblem.Name = "TxtProblem";
-            this.TxtProblem.Size = new System.Drawing.Size(563, 40);
+            this.TxtProblem.Size = new System.Drawing.Size(230, 124);
             this.TxtProblem.TabIndex = 4;
             // 
             // flowLayoutPanel3
@@ -252,16 +252,16 @@
             this.flowLayoutPanel3.Controls.Add(this.panel1);
             this.flowLayoutPanel3.Controls.Add(this.BtnRegistrar);
             this.flowLayoutPanel3.Controls.Add(this.BtnCancelar);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 128);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 252);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(707, 54);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(332, 54);
             this.flowLayoutPanel3.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(704, 10);
+            this.panel1.Size = new System.Drawing.Size(329, 10);
             this.panel1.TabIndex = 3;
             // 
             // BtnRegistrar
@@ -271,13 +271,14 @@
             this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.BtnRegistrar.Location = new System.Drawing.Point(235, 19);
-            this.BtnRegistrar.Margin = new System.Windows.Forms.Padding(235, 3, 3, 3);
+            this.BtnRegistrar.Location = new System.Drawing.Point(40, 19);
+            this.BtnRegistrar.Margin = new System.Windows.Forms.Padding(40, 3, 3, 3);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(105, 32);
             this.BtnRegistrar.TabIndex = 6;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // BtnCancelar
             // 
@@ -286,13 +287,14 @@
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.White;
-            this.BtnCancelar.Location = new System.Drawing.Point(378, 19);
+            this.BtnCancelar.Location = new System.Drawing.Point(183, 19);
             this.BtnCancelar.Margin = new System.Windows.Forms.Padding(35, 3, 3, 3);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(105, 32);
             this.BtnCancelar.TabIndex = 7;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -300,9 +302,9 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Controls.Add(this.LblTituloBuscar);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(102, 233);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 395);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(733, 77);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(332, 126);
             this.flowLayoutPanel1.TabIndex = 58;
             // 
             // LblTituloBuscar
@@ -312,11 +314,11 @@
             this.LblTituloBuscar.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTituloBuscar.ForeColor = System.Drawing.Color.White;
             this.LblTituloBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblTituloBuscar.Location = new System.Drawing.Point(3, 8);
-            this.LblTituloBuscar.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.LblTituloBuscar.Location = new System.Drawing.Point(0, 8);
+            this.LblTituloBuscar.Margin = new System.Windows.Forms.Padding(0, 8, 3, 3);
             this.LblTituloBuscar.Name = "LblTituloBuscar";
             this.LblTituloBuscar.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.LblTituloBuscar.Size = new System.Drawing.Size(728, 23);
+            this.LblTituloBuscar.Size = new System.Drawing.Size(320, 23);
             this.LblTituloBuscar.TabIndex = 2;
             this.LblTituloBuscar.Text = "BUSCAR EN ALMACÉN";
             this.LblTituloBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -327,10 +329,10 @@
             this.flowLayoutPanel4.Controls.Add(this.TxtBRef);
             this.flowLayoutPanel4.Controls.Add(this.LblBLugar);
             this.flowLayoutPanel4.Controls.Add(this.TxtBLugar);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(20, 34);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(40, 49);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(40, 15, 0, 0);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(711, 35);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(213, 70);
             this.flowLayoutPanel4.TabIndex = 0;
             // 
             // LblBRef
@@ -341,7 +343,7 @@
             this.LblBRef.Location = new System.Drawing.Point(0, 5);
             this.LblBRef.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.LblBRef.Name = "LblBRef";
-            this.LblBRef.Size = new System.Drawing.Size(80, 20);
+            this.LblBRef.Size = new System.Drawing.Size(77, 20);
             this.LblBRef.TabIndex = 4;
             this.LblBRef.Text = "Referencia:";
             this.LblBRef.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -350,21 +352,22 @@
             // 
             this.TxtBRef.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtBRef.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtBRef.Location = new System.Drawing.Point(83, 4);
+            this.TxtBRef.Location = new System.Drawing.Point(80, 4);
             this.TxtBRef.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
             this.TxtBRef.Name = "TxtBRef";
-            this.TxtBRef.Size = new System.Drawing.Size(230, 20);
+            this.TxtBRef.Size = new System.Drawing.Size(80, 20);
             this.TxtBRef.TabIndex = 3;
+            this.TxtBRef.TextChanged += new System.EventHandler(this.TxtBRef_TextChanged);
             // 
             // LblBLugar
             // 
             this.LblBLugar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblBLugar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblBLugar.ForeColor = System.Drawing.Color.White;
-            this.LblBLugar.Location = new System.Drawing.Point(333, 5);
+            this.LblBLugar.Location = new System.Drawing.Point(20, 30);
             this.LblBLugar.Margin = new System.Windows.Forms.Padding(20, 5, 0, 0);
             this.LblBLugar.Name = "LblBLugar";
-            this.LblBLugar.Size = new System.Drawing.Size(80, 20);
+            this.LblBLugar.Size = new System.Drawing.Size(57, 20);
             this.LblBLugar.TabIndex = 34;
             this.LblBLugar.Text = "Lugar:";
             this.LblBLugar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -373,11 +376,12 @@
             // 
             this.TxtBLugar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtBLugar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TxtBLugar.Location = new System.Drawing.Point(416, 4);
+            this.TxtBLugar.Location = new System.Drawing.Point(80, 29);
             this.TxtBLugar.Margin = new System.Windows.Forms.Padding(3, 4, 0, 0);
             this.TxtBLugar.Name = "TxtBLugar";
-            this.TxtBLugar.Size = new System.Drawing.Size(230, 20);
+            this.TxtBLugar.Size = new System.Drawing.Size(61, 20);
             this.TxtBLugar.TabIndex = 33;
+            this.TxtBLugar.TextChanged += new System.EventHandler(this.TxtBLugar_TextChanged);
             // 
             // FormAlmacen
             // 
@@ -393,6 +397,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAlmacen";
             this.Text = "FormAlmacen";
+            this.Load += new System.EventHandler(this.FormAlmacen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvAlmacen)).EndInit();
             this.FlpIngresarCliente.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -412,11 +417,11 @@
         private System.Windows.Forms.Label LblTituloMostrar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel FlpIngresarCliente;
-        private System.Windows.Forms.Label LblLlamada;
+        private System.Windows.Forms.Label LblRegistro;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label LblRef;
         private System.Windows.Forms.TextBox TxtRef;
-        private System.Windows.Forms.Label LblProblem;
+        private System.Windows.Forms.Label LblNota;
         private System.Windows.Forms.TextBox TxtProblem;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel1;

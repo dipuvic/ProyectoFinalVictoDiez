@@ -64,8 +64,6 @@ namespace Presentation
             {
                 LblFrase.Text = "La coincidencia es la forma en que Dios permanece anónimo.";
             }
-
-
         }
 
         private void TmrDate_Tick(object sender, EventArgs e)

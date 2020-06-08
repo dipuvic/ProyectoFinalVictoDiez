@@ -74,18 +74,19 @@ namespace Presentation
         {
             if (UserLoginCache.Cargo == Cargos.Administrador)
             {
-                //Código - Configurar estadísticas principales
+                //Código - 
             }
             if (UserLoginCache.Cargo == Cargos.Gerente)
             {
-                //Código - Configurar estadísticas principales
+                //Código - 
             }
             if (UserLoginCache.Cargo == Cargos.JefeDepartamento)
             {
-                //Código - Configurar estadísticas principales
+                //Código - 
             }
             if (UserLoginCache.Cargo == Cargos.Tecnico)
             {
+                iBtnEquipo.Visible = false;
                 iBtnProveedor.Visible = false;
             }
         }
@@ -104,26 +105,20 @@ namespace Presentation
             if(PanelVertical.Width == 45)
             {
                 PanelVertical.Width = 160;
-
-
                 iBtnUser.IconSize = 45;
                 LblNombre.Visible = true;
                 LblCargo.Visible = true;
                 LblMenu.Width = 155;
                 SeparadorMenu1.Width = 155;
-
             }
             else
             {
                 PanelVertical.Width = 45;
-
                 iBtnUser.IconSize = 32;
                 LblNombre.Visible = false;
                 LblCargo.Visible = false;
                 LblMenu.Width = 45;
                 SeparadorMenu1.Width = 35;
-
-
             }
         }
 

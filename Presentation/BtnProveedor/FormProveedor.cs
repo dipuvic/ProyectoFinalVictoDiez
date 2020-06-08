@@ -38,7 +38,6 @@ namespace Presentation.BtnProveedor
             {
                 this.Ttmensaje.SetToolTip(flowLayoutPanel7, "Rellene los campos para búsqueda automática");
             }
-
         }
 
         // >>> Funciones del formulario Proveedores
@@ -68,7 +67,7 @@ namespace Presentation.BtnProveedor
             BtnIngresar.Margin = margin;
             BtnCancelar.Visible = false;
             BtnIngresar.Text = "Ingresar";
-            LblTituloProveedor.Text = "ALTA Proveedor";
+            LblTituloProveedor.Text = "ALTA PROVEEDOR";
             LimpiarFormulario();
         }
 
@@ -135,7 +134,7 @@ namespace Presentation.BtnProveedor
                 BtnIngresar.Margin = margin;
                 BtnCancelar.Visible = true;
                 BtnIngresar.Text = "Guardar";
-                LblTituloProveedor.Text = "EDITAR CLIENTE";
+                LblTituloProveedor.Text = "EDITAR PROVEEDOR";
                 selectedproveedor = DgvProveedor.CurrentRow.Cells["Código"].Value.ToString();
                 TxtNombre.Text = DgvProveedor.CurrentRow.Cells["Nombre"].Value.ToString();
                 TxtNIF.Text = DgvProveedor.CurrentRow.Cells["NIF"].Value.ToString();

@@ -75,7 +75,6 @@ namespace Presentation
             CmbBCargo.DataSource = objD.ListarCargos();
             CmbBCargo.DisplayMember = "cargo";
             CmbBCargo.ValueMember = "idcargo";
-
         }
 
         private void MostrarEquipo()
@@ -120,7 +119,7 @@ namespace Presentation
                     LimpiarFormulario();
                     editar = false;
                     BtnIngresar.Text = "Añadir";
-                    LblTituloEquipo.Text = "Añadir nuevo producto";
+                    LblTituloEquipo.Text = "Añadir nuevo usuario";
                 }
                 catch (Exception ex)
                 {
@@ -146,7 +145,7 @@ namespace Presentation
                 BtnIngresar.Margin = margin;
                 BtnCancelar.Visible = true;
                 BtnIngresar.Text = "Guardar";
-                LblTituloEquipo.Text = "EDITAR PRODUCTO";
+                LblTituloEquipo.Text = "EDITAR USUARIO";
                 cargo = DgvEquipo.CurrentRow.Cells["Cargo"].Value.ToString();
 
                 if (cargo == "Administrador" || cargo == "Gerente" || cargo == "Jefe Departamento" || cargo == "Técnico")

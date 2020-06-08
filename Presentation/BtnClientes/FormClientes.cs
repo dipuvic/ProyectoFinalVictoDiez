@@ -48,7 +48,7 @@ namespace Presentation.BtnClientes
             BtnIngresar.Margin = margin;
             BtnCancelar.Visible = false;
             BtnIngresar.Text = "Ingresar";
-            LblTituloClientes.Text = "ALTA USUARIO";
+            LblTituloClientes.Text = "ALTA CLIENTE";
             LimpiarFormulario();
         }
 

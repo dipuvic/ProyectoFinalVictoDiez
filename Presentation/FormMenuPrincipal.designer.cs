@@ -206,6 +206,7 @@
             this.iBtnCalidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iBtnCalidad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtnCalidad.UseVisualStyleBackColor = true;
+            this.iBtnCalidad.Visible = false;
             this.iBtnCalidad.Click += new System.EventHandler(this.iBtnCalidad_Click);
             // 
             // iBtnAlmacen
